@@ -81,7 +81,6 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
           <Grid className="grid-secondary">
             <div className="flex flex-column">
               {" "}
-              <strong className="text-emphasis">ProOrganica</strong>
               {filterHomePage.map((i, key) => (
                 <span key={key}>
                   <Links
