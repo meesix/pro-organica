@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../images/logo.svg";
+import logo from "../../images/intro-w-moto.svg";
 
 //  pass down opacity state which is set in navigation components
 //  the gatsby bg image uses 0.99 opacity which makes the full page nav
