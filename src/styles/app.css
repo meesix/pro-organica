@@ -856,12 +856,12 @@ h6 {
   text-align: center;
   background-image: url("../images/banner.jpg");
   background-size: cover;
-  background-position-y: -30rem;
+  background-position-y: -35rem;
   padding: 4rem 2rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
   border-radius: 2rem;
-  color: #fff;
+  color: var(--color-light-green);
   cursor: pointer;
   box-shadow: 0 1px 3px 0 var(--color-box-shadow);
   opacity: 0.9;
