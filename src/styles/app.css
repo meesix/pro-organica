@@ -306,6 +306,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
 }
 
 @media (min-width: 25em) {
@@ -857,7 +858,7 @@ h6 {
   .OrderBox {
     width: 90%;
   }
-  
+
   .HomeHero__Image {
     width: 80%;
     height: auto;
@@ -986,9 +987,6 @@ h6 {
   padding: 0;
   margin: 0;
   font-weight: var(--font-light);
-}
-
-.animate-hover {
 }
 
 .animate-hover:hover {

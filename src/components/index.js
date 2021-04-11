@@ -8,7 +8,6 @@ export { default as Contact } from "./layout/Contact";
 export { default as Address } from "./layout/Address";
 
 //  Hero Images, Logos, Gatsby Fluid / Fixed and HTML default images
-export { default as Logo } from "./images/Logo";
 export { default as Hero } from "./images/Hero";
 export { default as Image } from "./images/Image";
 

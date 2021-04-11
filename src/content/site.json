@@ -1,0 +1,9 @@
+{
+    "siteMetadata":{
+       "defaultTitle":"ProOrganica",
+       "titleTemplate":"%s · ProOrganica · UK | Ukraine",
+       "defaultDescription":"Read about ProOrganica, who we are, what we are aiming to achieve and the products and services we offer. ",
+       "url":"https://proorganica.com",
+       "defaultImage":"src/images/proorganica.png"
+    }
+ }
