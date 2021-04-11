@@ -21,9 +21,18 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
   };
   const { allPages } = data;
   const pages = localize(allPages);
-  const filterHomePage = isHome
-    ? pages.filter(i => i.node.title !== "Home")
-    : pages;
+  const filterHomePage = pages.map(i => {
+    if (i.node.title === "Home") {
+      i.node.slug = "";
+    }
+    return i;
+  }).sort( (a,b)=> {
+    if (a.node.title === 'Home') {
+      return -1;
+    }
+    return 1;
+
+  })
 
   return (
     <>

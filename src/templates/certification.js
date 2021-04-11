@@ -1,5 +1,6 @@
 import React from "react";
 import { Layout, Section, Grid, Links, Image, SEO } from "../components";
+import PlaceOrderWidget from "../components/PlaceOrderWidget";
 
 const Certification = ({ pageContext = {} }) => {
   if (!pageContext) return;
@@ -59,6 +60,7 @@ const Certification = ({ pageContext = {} }) => {
           ))}
         </Grid>
       </Section>
+      <PlaceOrderWidget></PlaceOrderWidget>
     </Layout>
   );
 };
