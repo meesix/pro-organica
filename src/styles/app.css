@@ -309,7 +309,7 @@ body {
   font-feature-settings: "liga" on;
 }
 
-.HomeHero__Nav .knILks::before, .HomeHero__Nav .knILks::after, .HomeHero__Nav .knILks {
+.HomeHero__Nav nav > div > div::before, .HomeHero__Nav nav > div > div::after, .HomeHero__Nav nav > div > div {
   background-color: var(--color-dark-green);
 }
 @media (min-width: 25em) {
