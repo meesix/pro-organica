@@ -39,7 +39,6 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
       <Helmet>
         <html lang="en" />
         <body className={bodyClass} />
-        <meta name="google-site-verification" content="wiFph5iZOevwAZLs0jGV-zbsWFwEqYHCnzvhY4xUTF0" />
       </Helmet>
 
       <header className={`header ${isHome?"headerHome":""}`}>
