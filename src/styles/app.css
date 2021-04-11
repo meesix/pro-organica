@@ -854,6 +854,10 @@ h6 {
 
 @media (max-width: 48em) {
 
+  .OrderBox {
+    width: 90%;
+  }
+  
   .HomeHero__Image {
     width: 80%;
     height: auto;
