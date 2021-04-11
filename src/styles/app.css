@@ -309,6 +309,9 @@ body {
   font-feature-settings: "liga" on;
 }
 
+.HomeHero__Nav .knILks::before, .HomeHero__Nav .knILks::after, .HomeHero__Nav .knILks {
+  background-color: var(--color-dark-green);
+}
 @media (min-width: 25em) {
   body {
     font-size: calc(var(--font-base) * 1.1);
@@ -805,7 +808,8 @@ h6 {
   height: 78vh;
   position: relative;
   display: flex;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   z-index: 0;
 }
@@ -818,7 +822,7 @@ h6 {
 .HomeHero__Image {
   width: 50%;
   height: auto;
-  margin-top: -14rem;
+  margin-top: 6rem;
 }
 
 .card {display: flex; flex-direction: column;}
@@ -845,6 +849,33 @@ h6 {
 
 .OrderBox__Link:hover {
   opacity: 0.5;
+}
+
+.PlaceOrder:link, .PlaceOrder:visited {
+  display: block;
+  text-align: center;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position-y: -30rem;
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 var(--color-box-shadow);
+  opacity: 0.9;
+}
+
+.PlaceOrder:hover {
+  opacity: 1;
+}
+.PlaceOrder h1 {
+  margin: 0;
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
 @media (max-width: 65em) {
