@@ -1,5 +1,4 @@
 //  Application layout components
-export { default as Header } from "./layout/header";
 export { default as Layout } from "./layout/layout";
 export { default as Section } from "./layout/Section";
 export { default as Footer } from "./layout/Footer";

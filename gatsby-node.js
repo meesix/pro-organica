@@ -4,14 +4,8 @@ const defaultLanguage = "en-GB";
 const path = require(`path`);
 const {
   localizeUrl,
-  createLanguagesObject,
 } = require("./src/utils/localization");
 
-// Create two langauge objects
-const homeLocalized = createLanguagesObject(langs);
-const contentLocalized = createLanguagesObject(langs);
-const productsLocalized = createLanguagesObject(langs);
-const certificationLocalized = createLanguagesObject(langs);
 
 const homePage = path.resolve(`./src/templates/index.js`);
 const contentPage = path.resolve(`./src/templates/page.js`);
@@ -21,182 +15,13 @@ const productsPage = path.resolve(`./src/templates/products.js`);
 const singleProductPage = path.resolve(`./src/templates/single_product.js`);
 
 const contactLocalized = require(`./src/content/contacts/contact_list.json`);
+const homeLocalized = require(`./src/content/home/home.json`);
+const certificationLocalized = require(`./src/content/certification/certification.json`)
+const contentLocalized = require(`./src/content/content.json`);
+const productsLocalized = require(`./src/content/products/products.json`);
 
-
-exports.createPages = async ({ actions, graphql }) => {
+exports.createPages = async ({ actions }) => {
   const { createPage } = actions;
-
-  const productsPageData = await graphql(`
-  {
-    allCosmicjsPages(filter: { slug: { eq: "products" } }) {
-          edges {
-            node {
-              locale
-              slug
-              title
-              metadata {
-                products_shop {
-                  id
-                  product_description
-                  product_name
-                  product_photo {
-                    imgix_url
-                  }
-                }
-              }
-            }
-          }
-        }
-    }`);
-
-
-  const contentPageData = await graphql(`
-    {
-      allCosmicjsPages(filter: { slug: { nin: "home" } }) {
-        edges {
-          node {
-            slug
-            locale
-            title
-            content
-            metadata {
-              excerpt
-              main_image {
-                imgix_url
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const certificationPageData = await graphql(`
-    {
-      allCosmicjsPages(filter: { slug: { regex: "/home/" } }) {
-        edges {
-          node {
-            slug
-            locale
-            title
-            metadata {
-              affiliate_header
-              affiliates
-              affiliates_list {
-                logo_organic_eu {
-                  url
-                  imgix_url
-                }
-                logo_organic_ukraine {
-                  url
-                  imgix_url
-                }
-                logo_organic_food_federation {
-                  url
-                  imgix_url
-                }
-                logo_organic_standard {
-                  url
-                  imgix_url
-                }
-                pdf_organic_food_federation {
-                  url
-                  imgix_url
-                }
-                pdf_organic_standard {
-                  imgix_url
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const homePageData = await graphql(`
-    {
-      allCosmicjsPages(filter: { slug: { regex: "/home/" } }) {
-        edges {
-          node {
-            slug
-            locale
-            content
-            title
-            metadata {
-              products
-              certification
-              product_header
-              products_list {
-                cereal_grains {
-                  url
-                  imgix_url
-                }
-                source_to_order {
-                  url
-                  imgix_url
-                }
-                flour {
-                  url
-                  imgix_url
-                }
-                pulses {
-                  url
-                  imgix_url
-                }
-                seed_oils {
-                  url
-                  imgix_url
-                }
-                seeds {
-                  url
-                  imgix_url
-                }
-                product_list_details {
-                  description
-                  id
-                  name
-                  action
-                  order
-                  link
-                }
-              }
-              main_image {
-                imgix_url
-                url
-              }
-              home_banner_image {
-                url
-                imgix_url
-              }
-              home_banner_description
-              contact_us
-              contact_button
-              read_more_button
-              what_do_we_do_header
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const extractData = ({ localize, query } = {}) => {
-    return query.data.allCosmicjsPages.edges.forEach(({ node }) => {
-      if (node.locale === null) return;
-      localize[node.locale].push(node);
-    });
-  };
-
-
-  extractData({ localize: productsLocalized, query: productsPageData });
-  extractData({ localize: contentLocalized, query: contentPageData });
-  extractData({
-    localize: certificationLocalized,
-    query: certificationPageData,
-  });
-  extractData({ localize: homeLocalized, query: homePageData });
 
   langs.forEach(language => {
     // Create localized data for the home page
@@ -225,8 +50,6 @@ exports.createPages = async ({ actions, graphql }) => {
       },
     });
 
-
-
     // Create content pages (dynamically produced based on cosmic pages)
     [contentLocalized].forEach(pageData => {
       let parse = JSON.parse(JSON.stringify(pageData));
@@ -246,7 +69,6 @@ exports.createPages = async ({ actions, graphql }) => {
           });
       }
     });
-
 
     // Create products page
     createPage({
