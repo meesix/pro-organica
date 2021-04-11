@@ -19,7 +19,7 @@ const Contact = ({ pageContext }) => {
     },
   ] = contact;
 
-  console.log(contact);
+
   const addressList = contact_list?.address_list;
   const contactsList = contact_list?.contact_list_details;
 
@@ -56,6 +56,17 @@ const Contact = ({ pageContext }) => {
             )}
         </Grid>
 
+       <h1>United Kingdom</h1>
+       <br/>
+       <div class="card">
+          <ul>
+            <li>Jackie Bonfield</li>
+            <li><a class="text-emphasis darken" href="mailto:jackie@proorganica.co.uk" rel="noreferrer">jackie@proorganica.co.uk </a></li>
+            <li><a class="dark-darken" href="tel:++ 44 1254 671 41">+ 44 1254 671 41</a></li>
+          </ul>
+       </div>
+
+       <h1>Ukraine</h1>
         <Grid className="grid-secondary spacing-v-lg">
           {contact_list &&
             findImageOwner(contactsList, contact_list).map(

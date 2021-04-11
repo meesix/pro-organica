@@ -266,7 +266,6 @@ exports.createPages = async ({ actions, graphql }) => {
           .forEach(i => {
             if (i.metadata === null || i.metadata.products_shop === null) return;
             i.metadata.products_shop.forEach( e => {
-              console.log(i);
               createPage({
                 path: localizeUrl(i.locale, defaultLanguage, `/products/${e.id}`),
                 component: singleProductPage,

@@ -18,7 +18,16 @@
                      "country": "UK",
                      "id": "luba_michailova",
                      "card": true
-                   }
+                   },
+                   { 
+                     "name": "Jackie Bonfield",
+                     "position": "ProOrganica UK",
+                     "email": "jackie@proorganica.co.uk",
+                     "telephone": "+ 44 1254 671 41",
+                     "country": "United Kingdom",
+                     "id": "jackie_bonfield",
+                     "card": false
+                  }
                ],
                "contact_list_details": [
                   {
@@ -52,7 +61,7 @@
                 "address_list":[
                    {
                       "building":"Chemex Limited, LLC",
-                      "address":"Proorganica",
+                      "address":"ProOrganica",
                       "street":"Naberezhno-Luhova Str. 12",
                       "postcode":"04071",
                       "city":"Kyiv",
@@ -96,7 +105,11 @@
                 "iryna_sholokhova":{
                    "url":"https://cdn.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
                    "imgix_url":"https://imgix.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg"
-                }
+                },
+                "jackie_bonfield":{
+                  "url":"https://cdn.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
+                  "imgix_url":"https://imgix.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg"
+               }
              },
              "contact_details":{
                 "contact":[
