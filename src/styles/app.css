@@ -310,7 +310,7 @@ body {
 }
 
 .HomeHero__Nav nav > div > div::before, .HomeHero__Nav nav > div > div::after, .HomeHero__Nav nav > div > div {
-  background-color: var(--color-dark-green);
+  background-color: var(--color-light-green);
 }
 @media (min-width: 25em) {
   body {
