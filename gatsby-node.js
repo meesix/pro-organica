@@ -10,7 +10,6 @@ const {
 // Create two langauge objects
 const homeLocalized = createLanguagesObject(langs);
 const contentLocalized = createLanguagesObject(langs);
-const contactLocalized = createLanguagesObject(langs);
 const productsLocalized = createLanguagesObject(langs);
 const certificationLocalized = createLanguagesObject(langs);
 
@@ -20,6 +19,9 @@ const contactPage = path.resolve(`./src/templates/contact.js`);
 const certificationPage = path.resolve(`./src/templates/certification.js`);
 const productsPage = path.resolve(`./src/templates/products.js`);
 const singleProductPage = path.resolve(`./src/templates/single_product.js`);
+
+const contactLocalized = require(`./src/content/contacts/contact_list.json`);
+
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -47,80 +49,6 @@ exports.createPages = async ({ actions, graphql }) => {
         }
     }`);
 
-
-  const contactPageData = await graphql(`
-    {
-      allCosmicjsPages(filter: { slug: { regex: "/home/" } }) {
-        edges {
-          node {
-            locale
-            slug
-            locale
-            metadata {
-              get_in_touch_header
-              product_header
-              get_in_touch
-              contact_list {
-                contact_list_details {
-                  id
-                  telephone
-                  position
-                  name
-                  email
-                  country
-                  card
-                }
-                address_list {
-                  building
-                  address
-                  street
-                  postcode
-                  city
-                  country
-                  name
-                  telephone
-                }
-
-                luba_michailova {
-                  url
-                  imgix_url
-                }
-                pavel_gukov {
-                  url
-                  imgix_url
-                }
-                eugene_blokhin {
-                  url
-                  imgix_url
-                }
-                iryna_sholokhova {
-                  url
-                  imgix_url
-                }
-              }
-
-              contact_details {
-                contact {
-                  address {
-                    address
-                    building
-                    city
-                    country
-                    postcode
-                    street
-                  }
-                  country
-                  email
-                  telephone
-                  name
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
 
   const contentPageData = await graphql(`
     {
@@ -261,7 +189,7 @@ exports.createPages = async ({ actions, graphql }) => {
     });
   };
 
-  extractData({ localize: contactLocalized, query: contactPageData });
+
   extractData({ localize: productsLocalized, query: productsPageData });
   extractData({ localize: contentLocalized, query: contentPageData });
   extractData({

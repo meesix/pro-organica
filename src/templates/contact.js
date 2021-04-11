@@ -19,6 +19,7 @@ const Contact = ({ pageContext }) => {
     },
   ] = contact;
 
+  console.log(contact);
   const addressList = contact_list?.address_list;
   const contactsList = contact_list?.contact_list_details;
 

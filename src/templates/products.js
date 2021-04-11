@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { SEO, Layout, Image, Section, Grid, Links, Card } from "../components";
+import PlaceOrderWidget from "../components/PlaceOrderWidget";
+
 
 const Page = data => {
 
@@ -60,6 +62,8 @@ const Page = data => {
 
         </article>
       </Section>
+
+      <PlaceOrderWidget></PlaceOrderWidget>
     </Layout>
   );
 };

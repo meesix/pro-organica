@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { SEO, Layout, Image, Section, Links } from "../components";
+import PlaceOrderWidget from "../components/PlaceOrderWidget";
 
 const Page = data => {
  const product = data.pageContext.product;
@@ -39,6 +40,9 @@ const Page = data => {
             {buttonText}
           </Links>
       </Section>
+
+      <PlaceOrderWidget></PlaceOrderWidget>
+
     </Layout>
   );
 };
