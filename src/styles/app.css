@@ -822,7 +822,7 @@ h6 {
 .HomeHero__Image {
   width: 50%;
   height: auto;
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 .card {display: flex; flex-direction: column;}
