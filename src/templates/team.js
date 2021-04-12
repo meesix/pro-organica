@@ -56,21 +56,10 @@ const Contact = ({ pageContext }) => {
             )}
         </Grid>
 
-       <h1>United Kingdom</h1>
-       <br/>
-       <div class="card">
-          <ul>
-            <li>Jackie Bonfield</li>
-            <li><a class="text-emphasis darken" href="mailto:jackie@proorganica.co.uk" rel="noreferrer">jackie@proorganica.co.uk </a></li>
-            <li><a class="dark-darken" href="tel:++ 44 1254 671 41">+ 44 1254 671 41</a></li>
-          </ul>
-       </div>
-
-       <h1>Ukraine</h1>
         <Grid className="grid-secondary spacing-v-lg">
           {contact_list &&
             findImageOwner(contactsList, contact_list).map(
-              ({ card, name, image, position, email, telephone }, index) => {
+              ({ card, name, imgix_url, position, email, telephone }, index) => {
                 return (
                   <Card key={`${index}-${name}`}>
                     <>
@@ -78,7 +67,7 @@ const Contact = ({ pageContext }) => {
                         // <div>
                         <Image
                           label={`Image of ${name}, ${position} at ProOrganica`}
-                          image={image.imgix_url}
+                          image={imgix_url}
                           styles="border-radius-top"
                         />
                       ) : (

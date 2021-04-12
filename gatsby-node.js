@@ -15,7 +15,7 @@ const certificationPage = path.resolve(`./src/templates/certification.js`);
 const productsPage = path.resolve(`./src/templates/products.js`);
 const singleProductPage = path.resolve(`./src/templates/single_product.js`);
 
-const teamLocalized = require(`./src/content/contacts/team.json`);
+const teamsLocalized = require(`./src/content/contacts/team.json`);
 const contactsLocalized = require(`./src/content/contacts/contacts.json`);
 
 const homeLocalized = require(`./src/content/home/home.json`);
