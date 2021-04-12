@@ -4,69 +4,8 @@ import {
   Section,
   SEO,
 } from "../components";
+import Form from "../components/Form";
 
-import {isDevEnvironment} from '../utils/helper';
-
-
-let form = (
-<form onSubmit={submitForm} className="ProoForm">
-
-<div className="ProoForm__Group">
-  <label className="ProoForm__GroupItem">
-    Name:
-    <input id="proo_name" required className="ProoForm__Input" type="text"/>
-  </label>
-
-  <label className="ProoForm__GroupItem">
-    Email:
-    <input id="proo_email" required className="ProoForm__Input" type="email"/>
-  </label>
-</div>
-
-<div className="ProoForm__Group">
-  <label className="ProoForm__GroupItem">
-    Phone:
-    <input id="proo_phone" className="ProoForm__Input" type="phone"/>
-  </label>
-
-  <label className="ProoForm__GroupItem">
-    Company:
-    <input id="proo_company" className="ProoForm__Input" type="text"/>
-  </label>
-</div>
-
-<div className="ProoForm__Group">
-  <label className="ProoForm__TextareaLabel ProoForm__GroupItem">
-      Message: <br/>
-      <textarea id="proo_message" required  className="ProoForm__Textarea" name="message"></textarea>
-  </label>
-</div>
-<div className="ProoForm__Group">
-  <div class="ProoForm__GroupItem"><button className="button-primary" type="submit">Submit</button></div>
-</div>
-</form>
-);
-
-function submitForm(e) {
-  e.preventDefault();
-  const formField = ['proo_name', 'proo_email','proo_phone','proo_company','proo_message'];
-  const payload = formField.map( e=> {
-    return {'key':e, 'value':document.querySelector(`#${e}`).value};
-   } );
-
-   const formUrl = isDevEnvironment()?'http://localhost:8888/.netlify/functions/submit-form':'/.netlify/functions/submit-form';
-
-   fetch(formUrl, {
-      method:'post', 
-      body:JSON.stringify(payload)
-    })
-    .then(e=>e.json())
-    .then(e => {
-        if (e.code === 200) {
-          document.querySelector('.ProoForm').innerHTML = '<h1 class="mt-0">Thank you for your message</h1><p>our team member will get back to you as soon as possible.</p>'
-        }
-    });
-}
 
 const Contact = ({ pageContext }) => {
   const { data } = pageContext;
@@ -90,8 +29,37 @@ const Contact = ({ pageContext }) => {
         title={get_in_touch_header}
         className="flex-center-horizontal flex-center-vertical"
       >
+<div class="grid-contacts">
+<div className="flex flex-column">
+  <span class="footer-address-header">Ukraine</span>
+  <span>ProOrganica</span>
+  <span>Chemex Limited, LLC</span>
+  <span>Naberezhno-Luhova Str. 12</span>
+  <span>Kyiv 04071, Ukraine</span>
+  <br/>
+  <span><a href="mailto:info@proorganica.com">info@proorganica.com</a></span>
+  <span><a href="tel:+380 67 544-93-37">+380 67 544-93-37</a></span>
+  <br/>
+</div>
 
-      {form}
+<div className="flex flex-column">
+  <span class="footer-address-header">UK Distribution</span>
+  <span>ProOrganica Limited</span>
+  <span>10 Buncer Lane</span>
+  <span>Blackburn, BB2 6SE</span>
+  <span>United Kingdom</span>
+  <br/>
+  <span><a href="mailto:info@proorganica.co.uk">info@proorganica.co.uk</a></span>
+  <span><a href="tel:+380 67 544-93-37">+ 44 1254 671 41</a></span>
+</div>
+
+<div className="flex flex-column">
+  <span class="footer-address-header">EU Distribution</span>
+  <span>Coming soon</span>
+</div>
+</div>
+
+      <Form></Form>
 
       </Section>
     </Layout>

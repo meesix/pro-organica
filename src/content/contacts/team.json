@@ -55,12 +55,12 @@
                   },
                   { 
                      "name": "Jackie Bonfield",
-                     "position": "ProOrganica UK",
+                     "position": "UK Distribution",
                      "email": "jackie@proorganica.co.uk",
                      "telephone": "+ 44 1254 671 41",
                      "country": "United Kingdom",
                      "id": "jackie_bonfield",
-                     "card": true,
+                     "card": false,
                      "imgix_url":"https://imgix.cosmicjs.com/133d4be0-709e-11eb-87a2-9be5e90cdf74-oils-5optimized.jpg"
                   }
                 ],
