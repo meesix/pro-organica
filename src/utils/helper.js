@@ -22,3 +22,8 @@ export function buildLink(slug) {
 }
 
 export default findImageOwner;
+
+
+export function isDevEnvironment() {
+  return document.querySelector('meta[name="note"]').content === 'environment=development'; 
+}

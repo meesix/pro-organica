@@ -2,7 +2,6 @@
     "en-GB" : [
        {
           "locale":"en-GB",
-          "hello": "world",
           "slug":"home",
           "metadata":{
              "get_in_touch_header":"Get in touch",

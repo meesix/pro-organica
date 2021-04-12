@@ -2,26 +2,83 @@ import React from "react";
 import {
   Layout, 
   Section,
-  Grid,
   SEO,
-  Address,
-  Card,
-  Image,
   Contact as Profile,
 } from "../components";
-import findImageOwner from "../utils/helper";
+
+import {isDevEnvironment} from '../utils/helper';
+
+
+let form = (
+<form onSubmit={submitForm} className="ProoForm">
+
+<div className="ProoForm__Group">
+  <label className="ProoForm__GroupItem">
+    Name:
+    <input id="proo_name" required className="ProoForm__Input" type="text"/>
+  </label>
+
+  <label className="ProoForm__GroupItem">
+    Email:
+    <input id="proo_email" required className="ProoForm__Input" type="email"/>
+  </label>
+</div>
+
+<div className="ProoForm__Group">
+  <label className="ProoForm__GroupItem">
+    Phone:
+    <input id="proo_phone" className="ProoForm__Input" type="phone"/>
+  </label>
+
+  <label className="ProoForm__GroupItem">
+    Company:
+    <input id="proo_company" className="ProoForm__Input" type="text"/>
+  </label>
+</div>
+
+<div className="ProoForm__Group">
+  <label className="ProoForm__TextareaLabel ProoForm__GroupItem">
+      Message: <br/>
+      <textarea id="proo_message" required  className="ProoForm__Textarea" name="message"></textarea>
+  </label>
+</div>
+<div className="ProoForm__Group">
+  <div class="ProoForm__GroupItem"><button className="button-primary" type="submit">Submit</button></div>
+</div>
+</form>
+);
+
+function submitForm(e) {
+  e.preventDefault();
+  const formField = ['proo_name', 'proo_email','proo_phone','proo_company','proo_message'];
+  const payload = formField.map( e=> {
+    return {'key':e, 'value':document.querySelector(`#${e}`).value};
+   } );
+
+   const formUrl = isDevEnvironment()?'http://localhost:8888/.netlify/functions/submit-form':'/.netlify/functions/submit-form';
+
+   fetch(formUrl, {
+      method:'post', 
+      body:JSON.stringify(payload)
+    })
+    .then(e=>e.json())
+    .then(e => {
+        if (e.code === 200) {
+          document.querySelector('.ProoForm').innerHTML = '<h1 class="mt-0">Thank you for your message</h1><p>our team member will get back to you as soon as possible.</p>'
+        }
+    });
+}
 
 const Contact = ({ pageContext }) => {
   const { contact } = pageContext;
   const [
     {
-      metadata: { contact_list, get_in_touch, get_in_touch_header },
+      metadata: { get_in_touch, get_in_touch_header },
     },
   ] = contact;
 
-
-  const addressList = contact_list?.address_list;
-  const contactsList = contact_list?.contact_list_details;
+  
+  
 
   return (
     <Layout>
@@ -35,68 +92,9 @@ const Contact = ({ pageContext }) => {
         title={get_in_touch_header}
         className="flex-center-horizontal flex-center-vertical"
       >
-        <Grid className="grid-secondary">
-          {addressList &&
-            addressList.map(
-              (
-                { address, country, city, name, building, postcode, street },
-                index
-              ) => (
-                <Address
-                  key={index}
-                  building={building}
-                  street={street}
-                  name={name}
-                  postcode={postcode}
-                  city={city}
-                  country={country}
-                  address={address}
-                />
-              )
-            )}
-        </Grid>
 
-       <h1>United Kingdom</h1>
-       <br/>
-       <div class="card">
-          <ul>
-            <li>Jackie Bonfield</li>
-            <li><a class="text-emphasis darken" href="mailto:jackie@proorganica.co.uk" rel="noreferrer">jackie@proorganica.co.uk </a></li>
-            <li><a class="dark-darken" href="tel:++ 44 1254 671 41">+ 44 1254 671 41</a></li>
-          </ul>
-       </div>
+      {form}
 
-       <h1>Ukraine</h1>
-        <Grid className="grid-secondary spacing-v-lg">
-          {contact_list &&
-            findImageOwner(contactsList, contact_list).map(
-              ({ card, name, image, position, email, telephone }, index) => {
-                return (
-                  <Card key={`${index}-${name}`}>
-                    <>
-                      {card ? (
-                        // <div>
-                        <Image
-                          label={`Image of ${name}, ${position} at ProOrganica`}
-                          image={image.imgix_url}
-                          styles="border-radius-top"
-                        />
-                      ) : (
-                        // </div>
-                        ""
-                      )}
-                      <Profile
-                        name={name}
-                        position={position}
-                        email={email}
-                        telephone={telephone}
-                      ></Profile>
-                    </>
-                  </Card>
-                );
-              }
-            )}
-        </Grid>
       </Section>
     </Layout>
   );

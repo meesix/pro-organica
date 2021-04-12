@@ -87,7 +87,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
 
       <Footer>
         <Section spacing="v-md">
-          <Grid className="grid-secondary">
+          <Grid className="grid-footer">
             <div className="flex flex-column">
               {" "}
               {filterHomePage.map((i, key) => (
@@ -101,15 +101,35 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
                   </Links>
                 </span>
               ))}
-            </div>
-            <div className="flex flex-column">
-              <strong className="text-emphasis text-darken">Company</strong>
               <Links internal styling="a-white" href={`/certification`}>
                 {ukrainian ? "Сертифікація" : "Certification"}
               </Links>
               <Links internal styling="a-white" href="/contact">
                 {ukrainian ? "Контакти" : "Contact"}
               </Links>
+
+            </div>
+            <div className="flex flex-column a-white footer-address">
+                <span class="footer-address-header">Contact (Ukraine)</span>
+                <span>ProOrganica</span>
+                <span>Chemex Limited, LLC</span>
+                <span>Naberezhno-Luhova Str. 12</span>
+                <span>Kyiv 04071, Ukraine</span>
+                <br/>
+                <span><a class="a-white" href="mailto:info@proorganica.com">info@proorganica.com</a></span>
+                <span><a class="a-white" href="tel:+380 67 544-93-37">+380 67 544-93-37</a></span>
+                <br/>
+            </div>
+            <div className="flex flex-column a-white footer-address">
+                <span class="footer-address-header">Contact (Distributor in UK)</span>
+                <span>ProOrganica Limited</span>
+                <span>10 Buncer Lane</span>
+                <span>Blackburn, BB2 6SE</span>
+                <span>United Kingdom</span>
+                <br/>
+                <span><a class="a-white" href="mailto:info@proorganica.co.uk">info@proorganica.co.uk</a></span>
+                <span><a class="a-white" href="tel:+380 67 544-93-37">+ 44 1254 671 41</a></span>
+
             </div>
           </Grid>
           <div className="flex footer-rights-reserved-container">

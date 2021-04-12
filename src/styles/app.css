@@ -309,9 +309,10 @@ body {
   font-feature-settings: "liga" on;
 }
 
-.HomeHero__Nav nav > div > div::before, .HomeHero__Nav nav > div > div::after, .HomeHero__Nav nav > div > div {
+.headerHome .HomeHero__Nav nav > div > div::before, .headerHome .HomeHero__Nav nav > div > div::after, .headerHome  .HomeHero__Nav nav > div > div {
   background-color: var(--color-light-green);
 }
+
 @media (min-width: 25em) {
   body {
     font-size: calc(var(--font-base) * 1.1);
@@ -878,6 +879,45 @@ h6 {
   text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
+.ProoForm {
+  display: block;
+  box-shadow: 0 1px 3px 0 var(--color-box-shadow);
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: var(--color-off-white);
+}
+
+.ProoForm__Group {
+  display: flex;
+  font-weight: bold;
+}
+
+.ProoForm__GroupItem {
+  padding: 0.5em 1em;
+}
+
+.ProoForm__Textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.ProoForm__Input {
+  width: 100%;
+  margin-top: 1em;
+  font-weight: normal;
+  padding: 0.5em;
+}
+
+.ProoForm__TextareaLabel {
+  width: 100%;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
 @media (max-width: 65em) {
   .grid-primary {
     grid-template-columns: repeat(2, 1fr);
@@ -911,10 +951,37 @@ h6 {
   gap: 20px;
 }
 
+.grid-footer {
+  display: grid;
+  grid-template-columns: 40% repeat(2, 1fr);
+  padding-top:2rem;
+}
+
+.footer-address {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+
+.footer-address a:link, .footer-address a:visited {
+  opacity: 0.7;
+}
+
+.footer-address-header {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
 @media (max-width: 48em) {
-  .grid-secondary {
+  .grid-secondary, .grid-footer {
     grid-template-columns: 1fr;
   }
+
+  .footer-address {
+    padding-top: 2em;
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+
 }
 
 .grid-tertiary {
