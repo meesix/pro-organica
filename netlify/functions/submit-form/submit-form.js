@@ -5,8 +5,8 @@ const { GATSBY_SENDGRID_API_KEY } = process.env
     
 exports.handler = async (event, context, callback) => {
 
-  if (!event.body) {
-    body: JSON.stringify({'status':'Welcome','code':200})
+  if (event.body === undefined) {
+    return {statusCode: 200, x:event.body, body:JSON.stringify({'status':'Welcome','code':200})};
   }
 
   const payload = JSON.parse(event.body).reduce( (p,c) => {
