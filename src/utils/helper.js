@@ -25,5 +25,11 @@ export default findImageOwner;
 
 
 export function isDevEnvironment() {
-  return document.querySelector('meta[name="note"]').content === 'environment=development'; 
+  const meta = document.querySelector('meta[name="note"]');
+  if (meta) {
+    return meta.content === 'environment=development'; 
+  } else {
+    return false;
+  }
+  
 }
