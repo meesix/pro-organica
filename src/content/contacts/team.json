@@ -4,9 +4,7 @@
           "locale":"en-GB",
           "slug":"home",
           "metadata":{
-             "get_in_touch_header":"Get in touch",
-             "product_header":"Our Products",
-             "get_in_touch":"Get in touch if you would like to know more about ProOrganica or any of our products \n",
+             "team_header": "Our team",
              "contact_list":{
                "drafts": [
                   {
@@ -16,17 +14,10 @@
                      "telephone": "+44 7949 062552",
                      "country": "UK",
                      "id": "luba_michailova",
-                     "card": true
-                   },
-                   { 
-                     "name": "Jackie Bonfield",
-                     "position": "ProOrganica UK",
-                     "email": "jackie@proorganica.co.uk",
-                     "telephone": "+ 44 1254 671 41",
-                     "country": "United Kingdom",
-                     "id": "jackie_bonfield",
-                     "card": false
-                  }
+                     "card": true,
+                     "url":"https://cdn.cosmicjs.com/3027f050-658d-11eb-8120-dfe8ec2b682f-ef2183b0-3f1b-11eb-bce7-979a7cd98f5e-DSC0963.jpeg",
+                     "imgix_url":"https://imgix.cosmicjs.com/3027f050-658d-11eb-8120-dfe8ec2b682f-ef2183b0-3f1b-11eb-bce7-979a7cd98f5e-DSC0963.jpeg"  
+                   }
                ],
                "contact_list_details": [
                   {
@@ -36,7 +27,9 @@
                     "telephone": "+380 50 807-93-15",
                     "country": "Ukraine",
                     "id": "pavel_gukov",
-                    "card": true
+                    "card": true,
+                    "url":"https://cdn.cosmicjs.com/2c7807b0-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg",
+                    "imgix_url":"https://imgix.cosmicjs.com/2c7807b0-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg" 
                   },
                   {
                     "name": "Eugene Blokhin",
@@ -45,7 +38,9 @@
                     "telephone": "+380 67 544-93-37",
                     "country": "Ukraine",
                     "id": "eugene_blokhin",
-                    "card": true
+                    "card": true,
+                    "url":"https://cdn.cosmicjs.com/35c66280-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg",
+                    "imgix_url":"https://imgix.cosmicjs.com/35c66280-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg" 
                   },
                   {
                     "name": "Iryna Sholokhova",
@@ -54,7 +49,19 @@
                     "telephone": "+380 50 531-11-18",
                     "country": "Ukraine",
                     "id": "iryna_sholokhova",
-                    "card": true
+                    "card": true,
+                    "url":"https://cdn.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
+                    "imgix_url":"https://imgix.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg" 
+                  },
+                  { 
+                     "name": "Jackie Bonfield",
+                     "position": "ProOrganica UK",
+                     "email": "jackie@proorganica.co.uk",
+                     "telephone": "+ 44 1254 671 41",
+                     "country": "United Kingdom",
+                     "id": "jackie_bonfield",
+                     "card": true,
+                     "imgix_url":"https://imgix.cosmicjs.com/133d4be0-709e-11eb-87a2-9be5e90cdf74-oils-5optimized.jpg"
                   }
                 ],
                 "address_list":[
@@ -88,27 +95,7 @@
                      "name":"European Union",
                      "telephone":""
                   }
-                ],
-                "luba_michailova":{
-                   "url":"https://cdn.cosmicjs.com/3027f050-658d-11eb-8120-dfe8ec2b682f-ef2183b0-3f1b-11eb-bce7-979a7cd98f5e-DSC0963.jpeg",
-                   "imgix_url":"https://imgix.cosmicjs.com/3027f050-658d-11eb-8120-dfe8ec2b682f-ef2183b0-3f1b-11eb-bce7-979a7cd98f5e-DSC0963.jpeg"
-                },
-                "pavel_gukov":{
-                   "url":"https://cdn.cosmicjs.com/2c7807b0-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg",
-                   "imgix_url":"https://imgix.cosmicjs.com/2c7807b0-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg"
-                },
-                "eugene_blokhin":{
-                   "url":"https://cdn.cosmicjs.com/35c66280-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/35c66280-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg"
-                },
-                "iryna_sholokhova":{
-                   "url":"https://cdn.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg"
-                },
-                "jackie_bonfield":{
-                  "url":"https://cdn.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
-                  "imgix_url":"https://imgix.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg"
-               }
+                ]
              },
              "contact_details":{
                 "contact":[
@@ -150,9 +137,7 @@
           "locale":"uk-UA",
           "slug":"home",
           "metadata":{
-             "get_in_touch_header":"Контакти",
-             "product_header":"НАШІ ПРОДУКТИ",
-             "get_in_touch":"Надішліть нам лист електронною поштою, якщо Ви хочете дізнатися більше про ПроОрганіку чи нашу діяльність в Україні",
+             "team_header": "Наша команда",
              "contact_list":{
                "contact_list_details": [
                   {
@@ -162,7 +147,9 @@
                     "telephone": "+380 67 544-93-37",
                     "id": "eugene_blokhin",
                     "country": "Ukraine",
-                    "card": true
+                    "card": true,
+                    "url":"https://cdn.cosmicjs.com/071123d0-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg",
+                    "imgix_url":"https://imgix.cosmicjs.com/071123d0-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg" 
                   },
                   {
                     "name": "Ірина Шолохова",
@@ -171,7 +158,9 @@
                     "telephone": "+380 50 531-11-18",
                     "country": "Ukraine",
                     "id": "iryna_sholokhova",
-                    "card": true
+                    "card": true,
+                    "url":"https://cdn.cosmicjs.com/0d2f4d50-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
+                    "imgix_url":"https://imgix.cosmicjs.com/0d2f4d50-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg"
                   },
                   {
                     "name": "Павел Гуков",
@@ -180,7 +169,9 @@
                     "telephone": "+380 50 807-93-15",
                     "country": "Ukraine",
                     "id": "pavel_gukov",
-                    "card": true
+                    "card": true,
+                    "url":"https://cdn.cosmicjs.com/12379a00-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg",
+                    "imgix_url":"https://imgix.cosmicjs.com/12379a00-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg" 
                   }
                 ],
                 "address_list":[
@@ -204,20 +195,7 @@
                       "name":"ProOrganica UK",
                       "telephone":"+380 67 544-93-37"
                    }
-                ],
-                "luba_michailova":null,
-                "pavel_gukov":{
-                   "url":"https://cdn.cosmicjs.com/12379a00-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg",
-                   "imgix_url":"https://imgix.cosmicjs.com/12379a00-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg"
-                },
-                "eugene_blokhin":{
-                   "url":"https://cdn.cosmicjs.com/071123d0-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/071123d0-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg"
-                },
-                "iryna_sholokhova":{
-                   "url":"https://cdn.cosmicjs.com/0d2f4d50-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/0d2f4d50-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg"
-                }
+                ]
              },
              "contact_details":{
                 "contact":[

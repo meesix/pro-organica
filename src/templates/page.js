@@ -1,11 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { SEO, Layout, Image, Section } from "../components";
+import { SEO, Layout, Image, Section, Grid, Contact as Profile, Card } from "../components";
 import PlaceOrderWidget from '../components/PlaceOrderWidget';
+import contact_data from '../content/contacts/team.json';
 
 const Page = data => {
-  const { content, title, metadata, slug } =
+  const { content, title, metadata, slug, locale} =
     data.pageContext && data.pageContext.page;
+
+  const contact_list = contact_data[locale][0].metadata.contact_list.contact_list_details;
 
   return (
     <Layout>
@@ -32,6 +35,45 @@ const Page = data => {
           </section>
         </article>
       </Section>
+
+      {slug === "about" && 
+      (
+        <Section title={contact_data[locale][0].metadata.team_header}>
+          <a id="team"></a>
+          <Grid className="grid-secondary spacing-v-lg">
+              {contact_list &&
+                contact_list.map(
+                  ({ card, name, imgix_url, position, email, telephone }, index) => {
+                    return (
+                      <Card key={`${index}-${name}`}>
+                        <>
+                          {card ? (
+                            // <div>
+                            <Image
+                              label={`Image of ${name}, ${position} at ProOrganica`}
+                              image={imgix_url}
+                              styles="border-radius-top"
+                            />
+                          ) : (
+                            // </div>
+                            ""
+                          )}
+                          <Profile
+                            name={name}
+                            position={position}
+                            email={email}
+                            telephone={telephone}
+                          ></Profile>
+                        </>
+                      </Card>
+                    );
+                  }
+                )}
+            </Grid>
+        </Section>
+
+      )}
+
       <PlaceOrderWidget></PlaceOrderWidget>
     </Layout>
   );
