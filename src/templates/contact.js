@@ -3,7 +3,6 @@ import {
   Layout, 
   Section,
   SEO,
-  Contact as Profile,
 } from "../components";
 
 import {isDevEnvironment} from '../utils/helper';

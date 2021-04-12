@@ -15,7 +15,7 @@ const certificationPage = path.resolve(`./src/templates/certification.js`);
 const productsPage = path.resolve(`./src/templates/products.js`);
 const singleProductPage = path.resolve(`./src/templates/single_product.js`);
 
-const teamLocalized = require(`./src/content/contacts/team.json`);
+const teamsLocalized = require(`./src/content/contacts/team.json`);
 const contactsLocalized = require(`./src/content/contacts/contacts.json`);
 
 const homeLocalized = require(`./src/content/home/home.json`);
@@ -25,6 +25,8 @@ const productsLocalized = require(`./src/content/products/products.json`);
 
 exports.createPages = async ({ actions }) => {
   const { createPage } = actions;
+
+  console.log(langs);
 
   langs.forEach(language => {
     // Create localized data for the home page
@@ -52,7 +54,6 @@ exports.createPages = async ({ actions }) => {
         contact: contactsLocalized[language],
       },
     });
-
 
     createPage({
       path: localizeUrl(language, defaultLanguage, `/our-team`),
