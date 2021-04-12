@@ -38,8 +38,7 @@ const Page = data => {
 
       {slug === "about" && 
       (
-        <Section title={contact_data[locale][0].metadata.team_header}>
-          <a id="team"></a>
+        <Section id="team" title={contact_data[locale][0].metadata.team_header}>
           <Grid className="grid-secondary spacing-v-lg">
               {contact_list &&
                 contact_list.map(

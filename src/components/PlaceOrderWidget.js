@@ -1,7 +1,5 @@
 import React from "react";
 import { buildLink } from "../utils/helper";
-import { Link } from "gatsby";
-
 
 const PlaceOrderWidget = () => {
     return (
