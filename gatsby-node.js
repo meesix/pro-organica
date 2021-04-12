@@ -27,6 +27,7 @@ exports.createPages = async ({ actions }) => {
     // Create localized data for the home page
 
     pages.forEach( page => {
+      
         createPage({
           path: localizeUrl(language, defaultLanguage, page.slug),
           component: page.component,
@@ -37,8 +38,9 @@ exports.createPages = async ({ actions }) => {
     })
 
   contentLocalized[language].forEach(page => {
+
     createPage({
-      path: localizeUrl(language, defaultLanguage, `/${page.id}`),
+      path: localizeUrl(language, defaultLanguage, `/${page.slug}`),
       component: contentPage,
       context: {
         page,
