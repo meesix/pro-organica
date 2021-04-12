@@ -21,9 +21,15 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
   };
   const { allPages } = data;
   const pages = localize(allPages);
+  
   const filterHomePage = pages.map(i => {
     if (i.node.title === "Home") {
       i.node.slug = "";
+    }
+
+    if (i.node.slug === "why-ukraine") {
+      i.node.title = ukrainian ? "Наша команда":"Our team";
+      i.node.slug = "about#team";
     }
     return i;
   }).sort( (a,b)=> {
@@ -31,7 +37,6 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
       return -1;
     }
     return 1;
-
   })
 
   return (
