@@ -37,7 +37,6 @@ exports.createPages = async ({ actions }) => {
     })
 
   contentLocalized[language].forEach(page => {
-
     createPage({
       path: localizeUrl(language, defaultLanguage, `/${page.slug}`),
       component: contentPage,
@@ -57,28 +56,16 @@ exports.createPages = async ({ actions }) => {
       },
     });
     
-    [productsLocalized].forEach(productsData => {
-      let parse = JSON.parse(JSON.stringify(productsData));
-      // get lang specific page slug out of page data object
-      for (const [key, value] of Object.entries(parse)) {
-        value
-          .filter(i => i.locale === language)
-          .forEach(i => {
-            if (i.metadata === null || i.metadata.products_shop === null) return;
-            i.metadata.products_shop.forEach( e => {
-              createPage({
-                path: localizeUrl(i.locale, defaultLanguage, `/products/${e.id}`),
-                component: singleProductPage,
-                context: {
-                  product: e,
-                  parent: i,
-                },
-              });
-            });
- 
-          });
-      }
+    productsLocalized[language].forEach(page => {
+      createPage({
+        path: localizeUrl(language, defaultLanguage, `/products/${page.slug}`),
+        component: singleProductPage,
+        context: {
+          product: page,
+        },
+      });
     });
+
 
   });
 };

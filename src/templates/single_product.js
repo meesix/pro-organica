@@ -2,11 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { SEO, Layout, Image, Section, Links } from "../components";
 import PlaceOrderWidget from "../components/PlaceOrderWidget";
+import { useLocation } from "@reach/router";
 
 const Page = data => {
  const product = data.pageContext.product;
-
- const buttonText = data.pageContext.parent.locale === 'en-GB' ? "Contact us to learn more" : "Зв'яжіться з нами, щоб дізнатися більше.";
+ const { pathname } = useLocation();
+ const ukrainian = pathname.includes("uk-UA");
+ const buttonText = !ukrainian ? "Contact us to learn more" : "Зв'яжіться з нами, щоб дізнатися більше.";
 
   return (
     <Layout>
