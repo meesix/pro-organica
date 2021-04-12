@@ -10,11 +10,14 @@ const {
 const homePage = path.resolve(`./src/templates/index.js`);
 const contentPage = path.resolve(`./src/templates/page.js`);
 const contactPage = path.resolve(`./src/templates/contact.js`);
+const teamPage = path.resolve(`./src/templates/team.js`);
 const certificationPage = path.resolve(`./src/templates/certification.js`);
 const productsPage = path.resolve(`./src/templates/products.js`);
 const singleProductPage = path.resolve(`./src/templates/single_product.js`);
 
-const contactLocalized = require(`./src/content/contacts/contact_list.json`);
+const teamLocalized = require(`./src/content/contacts/team.json`);
+const contactsLocalized = require(`./src/content/contacts/contacts.json`);
+
 const homeLocalized = require(`./src/content/home/home.json`);
 const certificationLocalized = require(`./src/content/certification/certification.json`)
 const contentLocalized = require(`./src/content/content.json`);
@@ -46,7 +49,16 @@ exports.createPages = async ({ actions }) => {
       path: localizeUrl(language, defaultLanguage, `/contact`),
       component: contactPage,
       context: {
-        contact: contactLocalized[language],
+        contact: contactsLocalized[language],
+      },
+    });
+
+
+    createPage({
+      path: localizeUrl(language, defaultLanguage, `/our-team`),
+      component: teamPage,
+      context: {
+        contact: teamsLocalized[language],
       },
     });
 

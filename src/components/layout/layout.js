@@ -121,7 +121,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
                 <br/>
             </div>
             <div className="flex flex-column a-white footer-address">
-                <span class="footer-address-header">Contact (Distributor in UK)</span>
+                <span class="footer-address-header">Distribution in UK</span>
                 <span>ProOrganica Limited</span>
                 <span>10 Buncer Lane</span>
                 <span>Blackburn, BB2 6SE</span>
@@ -130,6 +130,10 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
                 <span><a class="a-white" href="mailto:info@proorganica.co.uk">info@proorganica.co.uk</a></span>
                 <span><a class="a-white" href="tel:+380 67 544-93-37">+ 44 1254 671 41</a></span>
 
+            </div>
+            <div className="flex flex-column a-white footer-address">
+                <span class="footer-address-header">Distribution in EU</span>
+                <span>Comming soon</span>
             </div>
           </Grid>
           <div className="flex footer-rights-reserved-container">

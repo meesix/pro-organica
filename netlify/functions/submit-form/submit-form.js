@@ -14,7 +14,6 @@ exports.handler = async (event, context, callback) => {
       return p;
   }, {});
 
-  //define pdf email content and sender
   const msg = { 
     to: 'mee.six@gmail.com',
     from: 'ProOrganica Site <info@proorganica.com>',

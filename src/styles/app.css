@@ -953,12 +953,13 @@ h6 {
 
 .grid-footer {
   display: grid;
-  grid-template-columns: 40% repeat(2, 1fr);
+  grid-template-columns: 27% repeat(2, 1fr) 17%;
+  gap: 1.5em;
   padding-top:2rem;
 }
 
 .footer-address {
-  font-size: 0.7em;
+  font-size: 0.6em;
   line-height: 1.5em;
 }
 
