@@ -133,7 +133,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
             </div>
             <div className="flex flex-column a-white footer-address">
                 <span class="footer-address-header">Distribution in EU</span>
-                <span>Comming soon</span>
+                <span>Coming soon</span>
             </div>
           </Grid>
           <div className="flex footer-rights-reserved-container">
