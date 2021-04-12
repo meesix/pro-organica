@@ -19,6 +19,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
   const localize = obj => {
     return obj.edges.filter(i => i.node.locale.includes(currentLocale));
   };
+
   const { allPages } = data;
   const pages = localize(allPages);
   

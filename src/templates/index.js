@@ -4,6 +4,7 @@ import findImageOwner from "../utils/helper";
 import PlaceOrderWidget from '../components/PlaceOrderWidget';
 
 const Index = ({ pageContext }) => {
+
   const [
     {
       metadata: {
@@ -14,7 +15,7 @@ const Index = ({ pageContext }) => {
         products_list,
       },
     },
-  ] = pageContext.home;
+  ] = pageContext.data;
    
   const productList = products_list?.product_list_details.sort((a, b) => {
     return a.order < b.order ? -1 : a.order > b.order ? 1 : 0;
@@ -28,7 +29,7 @@ const Index = ({ pageContext }) => {
         title={what_do_we_do_header}
       > 
         <Grid className="grid-primary">
-          {pageContext.pages.map(({ title, locale, slug, metadata }, index) => {
+          {pageContext.data[0].pages.map(({ title, locale, slug, image }, index) => {
 
             return slug !== 'products' && (
               <Links 
@@ -45,7 +46,7 @@ const Index = ({ pageContext }) => {
                   href={`/${locale}/${slug}`.replace("/en-GB", "")}
                 >
                   <Image
-                    image={metadata.main_image && metadata.main_image.imgix_url}
+                    image={image}
                     alt="Links to content pages"
                     styles="border-radius-top"
                   />
@@ -92,7 +93,7 @@ const Index = ({ pageContext }) => {
                   return (
                     <Card
                       button={action}
-                      href={pageContext.home[0].locale === 'en-GB' ? '/contact' : 'https://proorganica.prom.ua/ua/'}
+                      href={pageContext.data[0].locale === 'en-GB' ? '/contact' : 'https://proorganica.prom.ua/ua/'}
                       label={description}
                       key={`${index}-${name}`}
                       description={action ? "" : description}

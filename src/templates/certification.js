@@ -4,12 +4,12 @@ import PlaceOrderWidget from "../components/PlaceOrderWidget";
 
 const Certification = ({ pageContext = {} }) => {
   if (!pageContext) return;
-  const { certification } = pageContext;
+  const { data } = pageContext;
   const [
     {
       metadata: { affiliates, affiliates_list, affiliate_header },
     },
-  ] = certification;
+  ] = data;
 
   const {
     logo_organic_food_federation,

@@ -12,12 +12,12 @@ import {
 import findImageOwner from "../utils/helper";
 
 const Contact = ({ pageContext }) => {
-  const { contact } = pageContext;
+  const { data } = pageContext;
   const [
     {
       metadata: { contact_list, get_in_touch, get_in_touch_header },
     },
-  ] = contact;
+  ] = data;
 
 
   const addressList = contact_list?.address_list;

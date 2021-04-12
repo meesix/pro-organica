@@ -69,16 +69,15 @@ function submitForm(e) {
 }
 
 const Contact = ({ pageContext }) => {
-  const { contact } = pageContext;
+  const { data } = pageContext;
+
   const [
     {
       metadata: { get_in_touch, get_in_touch_header },
     },
-  ] = contact;
+  ] = data;
 
   
-  
-
   return (
     <Layout>
       <SEO
