@@ -110,9 +110,9 @@
           "content":"",
           "title":"Home",
           "pages": [
-            {"title":"Чому Україна", "locale":"en-GB", "slug":"why-ukraine", "image":"https://imgix.cosmicjs.com/66404d60-3fb6-11eb-8abb-39454084eadd-why-ukraine-copy.jpg"},
-            {"title":"Наші послуги", "locale":"en-GB", "slug":"what-we-offer", "image":"https://imgix.cosmicjs.com/a05365f0-3fb6-11eb-8abb-39454084eadd-what-we-offer-.jpg"},
-            {"title":"Про нас", "locale":"en-GB", "slug":"about", "image":"https://imgix.cosmicjs.com/29bd3be0-70ae-11eb-87a2-9be5e90cdf74-aboutus.jpg"}
+            {"title":"Чому Україна", "locale":"uk-UA", "slug":"why-ukraine", "image":"https://imgix.cosmicjs.com/66404d60-3fb6-11eb-8abb-39454084eadd-why-ukraine-copy.jpg"},
+            {"title":"Наші послуги", "locale":"uk-UA", "slug":"what-we-offer", "image":"https://imgix.cosmicjs.com/a05365f0-3fb6-11eb-8abb-39454084eadd-what-we-offer-.jpg"},
+            {"title":"Про нас", "locale":"uk-UA", "slug":"about", "image":"https://imgix.cosmicjs.com/29bd3be0-70ae-11eb-87a2-9be5e90cdf74-aboutus.jpg"}
          ],
           "metadata":{
              "products":"Органічні зернові та бобові з самих богатих грунтів на землі",
