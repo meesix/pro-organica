@@ -57,7 +57,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
                 location={locale}
               />
               <div>
-                <Links
+                { !ukrainian ? (<Links
                   internal
                   href={
                     currentPage[1] === "uk-UA"
@@ -70,8 +70,8 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
                   animate={false}
                 >
                   UA
-                </Links>
-                <Links
+                </Links>) : 
+                (<Links
                   internal
                   href={`/${currentPage[2] ? currentPage[2] : ""}`.replace(
                     "undefined",
@@ -81,7 +81,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
                   animate={false}
                 >
                   EN
-                </Links>{" "}
+                </Links>)}{" "}
               </div>
             </div>
           </Section>
