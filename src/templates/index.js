@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout, SEO, Grid, Section, Image, Card, Links } from "../components";
 import findImageOwner from "../utils/helper";
-import {buildLink} from '../utils/helper';
+import PlaceOrderWidget from '../components/PlaceOrderWidget';
 
 const Index = ({ pageContext }) => {
   const [
@@ -111,10 +111,7 @@ const Index = ({ pageContext }) => {
         </Grid>
       </Section>
 
-      <a href={buildLink('contact')} className="PlaceOrder max-width">
-          <h1>Place an Order</h1>
-      </a>
-
+      <PlaceOrderWidget></PlaceOrderWidget>
 
     </Layout>
   );
