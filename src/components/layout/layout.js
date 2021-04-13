@@ -107,18 +107,28 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
                   </Links>
                 </span>
               ))}
-     
-
-            </div>
-            <div className="flex flex-column a-white">
-            <Links internal styling="a-white" href={`/certification`}>
+              <Links internal styling="a-white" href={`/certification`}>
                 {ukrainian ? "Сертифікація" : "Certification"}
               </Links>
               <Links internal styling="a-white" href="/contact">
                 {ukrainian ? "Контакти" : "Contact"}
               </Links>
+
             </div>
-       
+            <div className="flex flex-column a-white footer-address">
+                <span class="footer-address-header">Ukraine</span>
+                <span><a class="a-white" href="mailto:info@proorganica.com">info@proorganica.com</a></span>
+                 <span><a class="a-white" href="tel:+380 67 544-93-37">+380 67 544-93-37</a></span>
+            </div>
+            <div className="flex flex-column a-white footer-address">
+                <span class="footer-address-header">UK Distribution</span>
+                <span><a class="a-white" href="mailto:info@proorganica.co.uk">info@proorganica.co.uk</a></span>
+                <span><a class="a-white" href="tel:+380 67 544-93-37">+ 44 1254 671 41</a></span>
+            </div>
+            <div className="flex flex-column a-white footer-address">
+                <span class="footer-address-header">EU Distribution</span>
+                <span>Coming soon</span>
+            </div>
           </Grid>
           <div className="flex footer-rights-reserved-container">
             {" "}
