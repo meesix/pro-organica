@@ -996,8 +996,8 @@ h6 {
 
 .grid-footer {
   display: grid;
-  grid-template-columns: 27% repeat(2, 1fr) 17%;
-  gap: 1.5em;
+  grid-template-columns: 1fr 1fr 1fr 19%;
+  gap: 1.2em;
   padding-top:2rem;
 
 }
@@ -1014,7 +1014,7 @@ h6 {
 }
 
 .footer-address {
-  font-size: 0.6em;
+  font-size: 0.7em;
   line-height: 1.5em;
 }
 
