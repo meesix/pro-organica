@@ -50,7 +50,7 @@ const Contact = ({ pageContext }) => {
   <span>United Kingdom</span>
   <br/>
   <span><a href="mailto:info@proorganica.co.uk">info@proorganica.co.uk</a></span>
-  <span><a href="tel:+380 67 544-93-37">+ 44 1254 671 41</a></span>
+  <span><a href="tel:+44 1254 671417">+ 44 1254 671417</a></span>
 </div>
 
 <div className="flex flex-column">
