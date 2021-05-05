@@ -60,8 +60,8 @@
                      "telephone": "+44 7772 593183 (WhatsApp)",
                      "country": "United Kingdom",
                      "id": "jackie_bonfield",
-                     "card": false,
-                     "imgix_url":"https://imgix.cosmicjs.com/133d4be0-709e-11eb-87a2-9be5e90cdf74-oils-5optimized.jpg"
+                     "card": true,
+                     "imgix_url":"https://imgix.cosmicjs.com/eef52300-ade9-11eb-bd86-3988be5a9e1c-e4ce13b2-70e2-4db4-83ca-6d7f07b0fe66.JPG"
                   }
                 ],
                 "address_list":[
