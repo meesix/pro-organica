@@ -5,41 +5,27 @@
           "locale":"en-GB",
           "title":"Home",
           "metadata":{
-             "affiliate_header":"Certificates",
-             "affiliates":"We are proudly working in collaboration with our partners from the UK, Ukraine and across the EU. To download our certificates click on the logos listed below",
+             "header":"Certificates",
+             "content":"We are proudly working in collaboration with our partners from the UK, Ukraine and across the EU. To download our certificates click on the logos listed below",
              "affiliates_list":{
-                "logo_organic_eu":{
-                   "url":"https://cdn.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,",
-                   "imgix_url":"https://imgix.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,"
+                "organic_food_federation":{
+                   "img":"https://imgix.cosmicjs.com/423a9740-532a-11eb-bbc3-d5edc25fc7c1-OFFLogocirclecollarge.jpg?q=&auto=compress,enhance,format,",
+                   "pdf":"https://imgix.cosmicjs.com/19d4c9a0-73a0-11ec-886a-130c8e529dc2-ProO-Bio-Certificate-business-till-20.07.22.pdf"
                 },
-                "logo_organic_ukraine":{
-                   "url":"https://cdn.cosmicjs.com/490d6ac0-532a-11eb-bbc3-d5edc25fc7c1-organic-ukrainelogo.png?q=&auto=compress,enhance,format,",
-                   "imgix_url":"https://imgix.cosmicjs.com/490d6ac0-532a-11eb-bbc3-d5edc25fc7c1-organic-ukrainelogo.png?q=&auto=compress,enhance,format,"
+                "organic_standard":{
+                  "pdf":"https://cdn.cosmicjs.com/1d60fda0-73a0-11ec-886a-130c8e529dc2-21ADECHEMEXCertificateEU.pdf",
+                  "img":"https://imgix.cosmicjs.com/5979abd0-532a-11eb-bbc3-d5edc25fc7c1-OStrademarkfinal.jpg?q=&auto=compress,enhance,format,"
                 },
-                "logo_organic_food_federation":{
-                   "url":"https://cdn.cosmicjs.com/423a9740-532a-11eb-bbc3-d5edc25fc7c1-OFFLogocirclecollarge.jpg?q=&auto=compress,enhance,format,",
-                   "imgix_url":"https://imgix.cosmicjs.com/423a9740-532a-11eb-bbc3-d5edc25fc7c1-OFFLogocirclecollarge.jpg?q=&auto=compress,enhance,format,"
+                "bio_suisse": {
+                  "img":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png",
+                  "pdf":"https://imgix.cosmicjs.com/edc333b0-739f-11ec-886a-130c8e529dc2-2021BSZertifikatCHEMEX-LTD-LLC.pdf"
                 },
-                "logo_organic_standard":{
-                   "url":"https://cdn.cosmicjs.com/5979abd0-532a-11eb-bbc3-d5edc25fc7c1-OStrademarkfinal.jpg?q=&auto=compress,enhance,format,",
-                   "imgix_url":"https://imgix.cosmicjs.com/5979abd0-532a-11eb-bbc3-d5edc25fc7c1-OStrademarkfinal.jpg?q=&auto=compress,enhance,format,"
-                },
-                "pdf_organic_food_federation":{
-                  "imgix_url":"https://imgix.cosmicjs.com/19d4c9a0-73a0-11ec-886a-130c8e529dc2-ProO-Bio-Certificate-business-till-20.07.22.pdf",
-                  "url":"https://cdn.cosmicjs.com/19d4c9a0-73a0-11ec-886a-130c8e529dc2-ProO-Bio-Certificate-business-till-20.07.22.pdf"
+                "organic_eu":{
+                  "img":"https://imgix.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,"
                },
-                "pdf_organic_standard":{
-                   "imgix_url":"https://imgix.cosmicjs.com/1d60fda0-73a0-11ec-886a-130c8e529dc2-21ADECHEMEXCertificateEU.pdf",
-                   "url":"https://cdn.cosmicjs.com/1d60fda0-73a0-11ec-886a-130c8e529dc2-21ADECHEMEXCertificateEU.pdf"
-                },
-                "logo_bio_suisse": {
-                  "imgix_url":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png",
-                  "url":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png"
-                },
-                "pdf_bio_suisse": {
-                  "imgix_url":"https://imgix.cosmicjs.com/edc333b0-739f-11ec-886a-130c8e529dc2-2021BSZertifikatCHEMEX-LTD-LLC.pdf",
-                  "url":"https://imgix.cosmicjs.com/edc333b0-739f-11ec-886a-130c8e529dc2-2021BSZertifikatCHEMEX-LTD-LLC.pdf"
-                }
+               "organic_ukraine":{
+                  "img":"https://imgix.cosmicjs.com/490d6ac0-532a-11eb-bbc3-d5edc25fc7c1-organic-ukrainelogo.png?q=&auto=compress,enhance,format,"
+               }
              }
           }
        }
@@ -50,42 +36,28 @@
           "locale":"uk-UA",
           "title":"Home",
           "metadata":{
-             "affiliate_header":"Сертифікати",
-             "affiliates":"Ми пишаємося тим, що співпрацюємо з нашими партнерами із Великої Британії, України та Європи. Щоб завантажити наші сертифікати, натисніть на логотипи, указані нижче",
+             "header":"Сертифікати",
+             "content":"Ми пишаємося тим, що співпрацюємо з нашими партнерами із Великої Британії, України та Європи. Щоб завантажити наші сертифікати, натисніть на логотипи, указані нижче",
              "affiliates_list":{
-                "logo_organic_eu":{
-                   "url":"https://cdn.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,",
-                   "imgix_url":"https://imgix.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,"
-                },
-                "logo_organic_ukraine":{
-                   "url":"https://cdn.cosmicjs.com/490d6ac0-532a-11eb-bbc3-d5edc25fc7c1-organic-ukrainelogo.png?q=&auto=compress,enhance,format,",
-                   "imgix_url":"https://imgix.cosmicjs.com/490d6ac0-532a-11eb-bbc3-d5edc25fc7c1-organic-ukrainelogo.png?q=&auto=compress,enhance,format,"
-                },
-                "logo_organic_food_federation":{
-                   "url":"https://cdn.cosmicjs.com/15291d80-532a-11eb-bbc3-d5edc25fc7c1-OFFLogocirclecollarge.jpg?q=&auto=compress,enhance,format,",
-                   "imgix_url":"https://imgix.cosmicjs.com/15291d80-532a-11eb-bbc3-d5edc25fc7c1-OFFLogocirclecollarge.jpg?q=&auto=compress,enhance,format,"
-                },
-                "logo_organic_standard":{
-                   "url":"https://cdn.cosmicjs.com/5979abd0-532a-11eb-bbc3-d5edc25fc7c1-OStrademarkfinal.jpg?q=&auto=compress,enhance,format,",
-                   "imgix_url":"https://imgix.cosmicjs.com/5979abd0-532a-11eb-bbc3-d5edc25fc7c1-OStrademarkfinal.jpg?q=&auto=compress,enhance,format,"
-                },
-                "pdf_organic_food_federation":{
-                  "imgix_url":"https://imgix.cosmicjs.com/19d4c9a0-73a0-11ec-886a-130c8e529dc2-ProO-Bio-Certificate-business-till-20.07.22.pdf",
-                  "url":"https://cdn.cosmicjs.com/19d4c9a0-73a0-11ec-886a-130c8e529dc2-ProO-Bio-Certificate-business-till-20.07.22.pdf"
-                },
-                "pdf_organic_standard":{
-                  "imgix_url":"https://imgix.cosmicjs.com/1d60fda0-73a0-11ec-886a-130c8e529dc2-21ADECHEMEXCertificateEU.pdf",
-                  "url":"https://cdn.cosmicjs.com/1d60fda0-73a0-11ec-886a-130c8e529dc2-21ADECHEMEXCertificateEU.pdf"
+               "organic_food_federation":{
+                  "img":"https://imgix.cosmicjs.com/423a9740-532a-11eb-bbc3-d5edc25fc7c1-OFFLogocirclecollarge.jpg?q=&auto=compress,enhance,format,",
+                  "pdf":"https://imgix.cosmicjs.com/19d4c9a0-73a0-11ec-886a-130c8e529dc2-ProO-Bio-Certificate-business-till-20.07.22.pdf"
                },
-                "logo_bio_suisse": {
-                  "imgix_url":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png",
-                  "url":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png"
-                },
-                "pdf_bio_suisse": {
-                  "imgix_url":"https://imgix.cosmicjs.com/edc333b0-739f-11ec-886a-130c8e529dc2-2021BSZertifikatCHEMEX-LTD-LLC.pdf",
-                  "url":"https://imgix.cosmicjs.com/edc333b0-739f-11ec-886a-130c8e529dc2-2021BSZertifikatCHEMEX-LTD-LLC.pdf"
-                }
-             }
+               "organic_standard":{
+                 "pdf":"https://cdn.cosmicjs.com/1d60fda0-73a0-11ec-886a-130c8e529dc2-21ADECHEMEXCertificateEU.pdf",
+                 "img":"https://imgix.cosmicjs.com/5979abd0-532a-11eb-bbc3-d5edc25fc7c1-OStrademarkfinal.jpg?q=&auto=compress,enhance,format,"
+               },
+               "bio_suisse": {
+                 "img":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png",
+                 "pdf":"https://imgix.cosmicjs.com/edc333b0-739f-11ec-886a-130c8e529dc2-2021BSZertifikatCHEMEX-LTD-LLC.pdf"
+               },
+               "organic_eu":{
+                  "img":"https://imgix.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,"
+               },
+               "organic_ukraine":{
+                  "img":"https://imgix.cosmicjs.com/490d6ac0-532a-11eb-bbc3-d5edc25fc7c1-organic-ukrainelogo.png?q=&auto=compress,enhance,format,"
+               }
+            }
           }
        }
     ]

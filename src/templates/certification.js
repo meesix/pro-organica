@@ -4,69 +4,36 @@ import PlaceOrderWidget from "../components/PlaceOrderWidget";
 
 const Certification = ({ pageContext = {} }) => {
   if (!pageContext) return;
-  const { data } = pageContext;
-  const [
-    {
-      metadata: { affiliates, affiliates_list, affiliate_header },
-    },
-  ] = data;
 
-  const {
-    logo_organic_food_federation,
-    pdf_organic_food_federation,
-    logo_bio_suisse,
-    pdf_bio_suisse,
-    logo_organic_standard,
-    pdf_organic_standard,
-    logo_organic_eu,
-    logo_organic_ukraine,
-  } = affiliates_list;
-
-  const federation = [
-    logo_organic_food_federation,
-    pdf_organic_food_federation,
-  ];
-
-  const suisse = [
-    logo_bio_suisse,
-    pdf_bio_suisse,
-  ];
-  
-  const standard = [logo_organic_standard, pdf_organic_standard];
-
-  const affiliateList = [
-    standard,
-    federation,
-    suisse,
-    logo_organic_eu,
-    logo_organic_ukraine,
-  ];
+  const postData = pageContext.data[0].metadata;
 
   return (
     <Layout>
       <SEO
-        title={"Certification"}
-        description={"Certification page with downloadable pdf certificates"}
+        title={postData.header}
+        description={postData.content}
       />
 
-      <Section title={affiliate_header} description={affiliates}>
+      <Section title={postData.header} description={postData.content}>
         <Grid className="grid-tertiary spacing-v-lg">
-          {affiliateList.map((certs, index) => (
-            <>
-              {certs.length ? (
-                <Links
-                  key={index}
-                  alt={`ProOrganica certifications`}
-                  href={certs[1]?.imgix_url}
-                  target="_blank"
-                >
-                  <Image image={certs[0]?.imgix_url} />
-                </Links>
-              ) : (
-                <Image key={index} image={certs?.imgix_url} />
-              )}
-            </>
-          ))}
+              {Object.keys(postData.affiliates_list).map((index) => {
+                if (postData.affiliates_list[index].pdf) {
+                  return (
+                    <Links
+                    key={index}
+                    alt={index}
+                    href={postData.affiliates_list[index].pdf}
+                    target="_blank"
+                    className="DownloadImage"
+                  >
+                      <Image image={postData.affiliates_list[index].img} />
+                    </Links>
+                  )
+                } else {
+                    return (<Image key={index} alt={index} image={postData.affiliates_list[index].img} />);
+                }
+              }
+            )}
         </Grid>
       </Section>
       <PlaceOrderWidget></PlaceOrderWidget>
