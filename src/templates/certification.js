@@ -14,6 +14,8 @@ const Certification = ({ pageContext = {} }) => {
   const {
     logo_organic_food_federation,
     pdf_organic_food_federation,
+    logo_bio_suisse,
+    pdf_bio_suisse,
     logo_organic_standard,
     pdf_organic_standard,
     logo_organic_eu,
@@ -24,11 +26,18 @@ const Certification = ({ pageContext = {} }) => {
     logo_organic_food_federation,
     pdf_organic_food_federation,
   ];
+
+  const suisse = [
+    logo_bio_suisse,
+    pdf_bio_suisse,
+  ];
+  
   const standard = [logo_organic_standard, pdf_organic_standard];
 
   const affiliateList = [
     standard,
     federation,
+    suisse,
     logo_organic_eu,
     logo_organic_ukraine,
   ];
