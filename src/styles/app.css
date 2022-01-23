@@ -1294,3 +1294,18 @@ tbody tr:last-of-type {
 .CountryPicker__Selector a:hover {
   color: #135e00;
 }
+
+@media (max-width: 665px) {
+  .CountryPicker__Selector {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .CountryPicker__Selector a:link, .CountryPicker__Selector a:visited {
+    margin-bottom: 2rem;
+    line-height: 1em;
+  }
+}
