@@ -8,7 +8,7 @@ import LanguageSelector from '../LanguageSelector';
 import { Navigation, Hero, Section, Grid, Footer, Links } from "..";
 import "../../styles/app.css";
 
-const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
+const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
   const [overlay, setOverlay] = useState(false);
   const { pathname } = useLocation();
   let currentPage = pathname.split("/");
@@ -26,7 +26,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
   
   const filterHomePage = pages.map(i => {
     if (i.node.title === "Home") {
-      i.node.slug = "";
+      i.node.slug = "home";
     }
 
     if (i.node.slug === "why-ukraine") {
@@ -44,13 +44,13 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
   return (
     <>
       <Helmet>
-        <html lang="en" />
+        <html lang={ukrainian?'ua':'en-GB'} />
         <body className={bodyClass} />
       </Helmet>
 
       <header className={`header ${isHome?"headerHome":""}`}>
 
-        <Hero home={isHome} opacity={overlay}>
+        <Hero home={isHome} headContent={headContent} opacity={overlay}>
           <Section>
             <div className="HomeHero__Nav flex flex-center flex-space-between">
               <Navigation
@@ -64,6 +64,9 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
             </div>
           </Section>
         </Hero>
+
+        {headContent}
+
       </header>
 
       <main>{children}</main>
