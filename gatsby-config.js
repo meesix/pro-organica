@@ -73,8 +73,8 @@ module.exports = {
         name: siteTitle,
         short_name: siteTitle,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#9FBE43`,
+        theme_color: `#9FBE43`,
         display: `minimal-ui`,
         icon: `src/images/branding/proorganica-fav.png`, // This path is relative to the root of the site.
       },

@@ -1,0 +1,28 @@
+
+              <div>
+                { !ukrainian ? (<Links
+                  internal
+                  href={
+                    currentPage[1] === "uk-UA"
+                      ? ""
+                      : currentPage[1] !== "uk-UA"
+                      ? `/uk-UA/${currentPage[1]}`
+                      : "uk-UA"
+                  }
+                  styling="a-white"
+                  animate={false}
+                >
+                  UA
+                </Links>) : 
+                (<Links
+                  internal
+                  href={`/${currentPage[2] ? currentPage[2] : ""}`.replace(
+                    "undefined",
+                    ""
+                  )}
+                  styling="a-white"
+                  animate={false}
+                >
+                  EN
+                </Links>)}{" "}
+              </div>

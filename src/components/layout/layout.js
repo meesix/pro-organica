@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { StaticQuery, graphql } from "gatsby";
 import { buildLink } from "../../utils/helper";
+import LanguageSelector from '../LanguageSelector';
 
 import { Navigation, Hero, Section, Grid, Footer, Links } from "..";
 import "../../styles/app.css";
@@ -57,33 +58,9 @@ const DefaultLayout = ({ children, bodyClass, isHome, data }) => {
                 overlay={overlay}
                 location={locale}
               />
-              <div>
-                { !ukrainian ? (<Links
-                  internal
-                  href={
-                    currentPage[1] === "uk-UA"
-                      ? ""
-                      : currentPage[1] !== "uk-UA"
-                      ? `/uk-UA/${currentPage[1]}`
-                      : "uk-UA"
-                  }
-                  styling="a-white"
-                  animate={false}
-                >
-                  UA
-                </Links>) : 
-                (<Links
-                  internal
-                  href={`/${currentPage[2] ? currentPage[2] : ""}`.replace(
-                    "undefined",
-                    ""
-                  )}
-                  styling="a-white"
-                  animate={false}
-                >
-                  EN
-                </Links>)}{" "}
-              </div>
+
+              <LanguageSelector locale={currentLocale} page={pathname} />
+
             </div>
           </Section>
         </Hero>

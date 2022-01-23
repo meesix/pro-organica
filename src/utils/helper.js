@@ -10,8 +10,6 @@ const findImageOwner = (arr1, arr2) => {
   });
 };
 
-
-
 export function buildLink(slug) {
   const windowGlobal = typeof window !== 'undefined' && window;
 

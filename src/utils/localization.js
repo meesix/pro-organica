@@ -11,7 +11,9 @@ const localizeUrl = (language, defaultLangKey, url) => {
   return localURL;
 };
 
+
 module.exports = {
   createLanguagesObject,
   localizeUrl,
+  getLocale
 };
