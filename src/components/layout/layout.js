@@ -26,7 +26,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
   
   const filterHomePage = pages.map(i => {
     if (i.node.title === "Home") {
-      i.node.slug = "home";
+      i.node.slug = "";
     }
 
     if (i.node.slug === "why-ukraine") {

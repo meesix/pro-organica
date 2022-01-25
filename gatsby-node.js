@@ -7,8 +7,7 @@ const {
 } = require("./src/utils/localization");
 
 const pages = [
-  {id:'countrySelection', slug:'/', component : path.resolve(`./src/templates/countrySelector.js`), data: require(`./src/content/home/home.json`)},
-  {id:'home', slug:'/home', component : path.resolve(`./src/templates/index.js`), data: require(`./src/content/home/home.json`)},
+  {id:'home', slug:'/', component : path.resolve(`./src/templates/index.js`), data: require(`./src/content/home/home.json`)},
   {id:'contact', slug:'/contact', component : path.resolve(`./src/templates/contact.js`), data: require(`./src/content/contacts/contacts.json`)},
   {id:'certification', slug:'/certification', component : path.resolve(`./src/templates/certification.js`), data: require(`./src/content/certification/certification.json`)},
   {id:'team', slug:'/our_team', component : path.resolve(`./src/templates/team.js`), data: require(`./src/content/contacts/team.json`)},

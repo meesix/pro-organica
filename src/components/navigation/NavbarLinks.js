@@ -39,7 +39,7 @@ const NavbarLinks = ({ pages }) => {
   const ukrainian = window.location.pathname.includes("uk-UA");
   return (
     <>
-      <NavItem to={buildLink('home')}>{ukrainian ? "Головна" : "Home"}</NavItem>
+      <NavItem to={buildLink('')}>{ukrainian ? "Головна" : "Home"}</NavItem>
       <NavItem to={buildLink('contact')}>{ukrainian ? "Контакти" : "Contact"}</NavItem>
       <NavItem to={buildLink('certification')}>
         {ukrainian ? "Органічні сертифікати" : "Certification"}
