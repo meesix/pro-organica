@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { StaticQuery, graphql } from "gatsby";
 import { buildLink } from "../../utils/helper";
+import LanguageSelector from '../LanguageSelector';
 
 import { Navigation, Hero, Section, Grid, Footer, Links } from "..";
 import "../../styles/app.css";
@@ -58,7 +59,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
                 location={locale}
               />
 
-             
+             <LanguageSelector locale={currentLocale} page={pathname}/>
 
             </div>
           </Section>
