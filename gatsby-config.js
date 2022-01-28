@@ -76,6 +76,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#9FBE43`,
         theme_color: `#9FBE43`,
+        googleSiteVerification:"wiFph5iZOevwAZLs0jGV-zbsWFwEqYHCnzvhY4xUTF0",
         display: `minimal-ui`,
         icon: `src/images/branding/proorganica-fav.png`, // This path is relative to the root of the site.
       },
