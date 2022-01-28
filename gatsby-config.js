@@ -12,7 +12,7 @@ module.exports = {
     image: `src/images/proorganica.png`,
     siteTitle,
     siteUrl: `https://proorganica.com/`,
-    "google-site-verification":"wiFph5iZOevwAZLs0jGV-zbsWFwEqYHCnzvhY4xUTF0"
+    googleSiteVerification:"wiFph5iZOevwAZLs0jGV-zbsWFwEqYHCnzvhY4xUTF0"
   },
   plugins: [
     `gatsby-plugin-transition-link`,
