@@ -45,6 +45,7 @@ const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
     <>
       <Helmet>
         <html lang={ukrainian?'ua':'en-GB'} />
+        <meta name="google-site-verification" content="wiFph5iZOevwAZLs0jGV-zbsWFwEqYHCnzvhY4xUTF0" />
         <body className={bodyClass} />
       </Helmet>
 
