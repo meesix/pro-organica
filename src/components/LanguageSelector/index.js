@@ -16,7 +16,11 @@ const LanguageSelector = ({locale, page}) => {
                         <a href={`${locale==='en-GB'?'/uk-UA/':'/'}${currentPage}`}>
                             {locale==='en-GB'?'UA':'EN'}
                         </a>
-                </div>
+                        <div className="Internationalization__Sep">|</div>
+                        <div className="Internationalization__Visit">
+                            {locale==='en-GB'?'Visit':''} <a href= "https://proorganica.co.uk/">Proorganica.co.uk → </a>
+                        </div>
+        </div>
     );
 };
 

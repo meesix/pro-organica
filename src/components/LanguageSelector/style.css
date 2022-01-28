@@ -2,10 +2,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--color-light-green);
+    font-size: 0.8em;
 }
 
 
 
 .header .Internationalization a:link, .header .Internationalization a:visited {
     color: #fff;
+    padding: 0;
+}
+
+
+.Internationalization__Visit {
+    display: block;
+    color: var(--color-light-green);
+    text-transform: uppercase;
+}
+
+.Internationalization__Sep {
+    margin: 0em 1em;
+}
+
+.header .Internationalization__Visit a:link, .header .Internationalization__Visit a:hover, .header .Internationalization__Visit a:visited  {
+    color: var(--color-light-green);
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-light-green);
 }
