@@ -57,6 +57,12 @@ const Index = ({ pageContext }) => {
         </Grid>
       </Section>
 
+      <div className="PlaceOrderWidget">
+      <hr/>
+        <p>Subscribe to newsletter</p>
+        <a href="https://3059a940.sibforms.com/serve/MUIEAJoFQAu6EO3PTKVpV_obQCNVcSUYmEAG-7eAU9ldBXLvyO9sP9PdHGedcwm94mI7mj47Iy1UyKFxl0Ha0pHc9Jx8cqcY6_93MANp9h8-m85jnET-oWLRG4Uob9UoJBfKcpZDCu7J-zJYLagE0ReuK6x0IraKdtIt8Xb7SJHLHOo35e2ZqsKJsXDcG-GH4z2haRTkrFsmS4Mc" className="PlaceOrder max-width"><h1>Subscribe</h1></a>
+      </div>
+
       <Section description={products} title={product_header}>
 
         <Grid className="grid-primary" id="products" >
