@@ -7,7 +7,6 @@ import { useLocation } from "@reach/router";
 const Index = ({ pageContext }) => {
 
   const { pathname } = useLocation();
-  let currentPage = pathname.split("/");
   const ukrainian = pathname.includes("uk-UA");
 
   const [
@@ -64,8 +63,8 @@ const Index = ({ pageContext }) => {
 
       <div className="PlaceOrderWidget">
       <hr/>
-        <p>{ukrainian?"Subscribe to newsletter":"Підписатися на розсилку"}</p>
-        <a target="_blank" href="https://3059a940.sibforms.com/serve/MUIEAJoFQAu6EO3PTKVpV_obQCNVcSUYmEAG-7eAU9ldBXLvyO9sP9PdHGedcwm94mI7mj47Iy1UyKFxl0Ha0pHc9Jx8cqcY6_93MANp9h8-m85jnET-oWLRG4Uob9UoJBfKcpZDCu7J-zJYLagE0ReuK6x0IraKdtIt8Xb7SJHLHOo35e2ZqsKJsXDcG-GH4z2haRTkrFsmS4Mc" className="PlaceOrder max-width"><h1>{ukrainian?"Subscribe":"Підписатися"}</h1></a>
+        <p>{!ukrainian?"Subscribe to newsletter":"Підписатися на розсилку"}</p>
+        <a target="_blank" href="https://3059a940.sibforms.com/serve/MUIEAJoFQAu6EO3PTKVpV_obQCNVcSUYmEAG-7eAU9ldBXLvyO9sP9PdHGedcwm94mI7mj47Iy1UyKFxl0Ha0pHc9Jx8cqcY6_93MANp9h8-m85jnET-oWLRG4Uob9UoJBfKcpZDCu7J-zJYLagE0ReuK6x0IraKdtIt8Xb7SJHLHOo35e2ZqsKJsXDcG-GH4z2haRTkrFsmS4Mc" className="PlaceOrder max-width"><h1>{!ukrainian?"Subscribe":"Підписатися"}</h1></a>
       </div>
 
       <Section description={products} title={product_header}>
