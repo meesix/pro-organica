@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, SEO, Grid, Section, Image, Card, Links } from "../components";
 import findImageOwner from "../utils/helper";
 import PlaceOrderWidget from '../components/PlaceOrderWidget';
+import { useLocation } from "@reach/router";
 
 const Index = ({ pageContext }) => {
 
