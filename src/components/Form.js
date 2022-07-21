@@ -1,22 +1,22 @@
 import React from "react";
-import {isDevEnvironment} from '../utils/helper';
 
 function submitForm(e) {
     e.preventDefault();
     const formField = ['proo_name', 'proo_email','proo_phone','proo_company','proo_message'];
-    const payload = formField.map( e=> {
-      return {'key':e, 'value':document.querySelector(`#${e}`).value};
-     } );
+    const payload = {};
+    
+    formField.forEach( e => {
+      payload[e] = document.querySelector(`#${e}`).value;
+     });
   
-     const formUrl = isDevEnvironment()?'http://localhost:8888/.netlify/functions/submit-form':'/.netlify/functions/submit-form';
+     const formUrl = 'https://proorganica.com/mailer/';
   
      fetch(formUrl, {
         method:'post', 
         body:JSON.stringify(payload)
       })
-      .then(e=>e.json())
       .then(e => {
-          if (e.code === 200) {
+          if (e.status === 202 || e.status === 200) {
             document.querySelector('.ProoForm').innerHTML = '<h1 class="mt-0">Thank you for your message</h1><p>our team member will get back to you as soon as possible.</p>'
           }
       });
