@@ -20,7 +20,7 @@ async function handleRequest(request) {
 	responseHeaders.set('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE')
 	responseHeaders.set('Access-Control-Max-Age', '86400')
 
-	responseHeaders.set('content-type', 'text/')
+	responseHeaders.set('content-type', 'text/json')
 
 	if (request.method === "OPTIONS") {
 		return handleOptions(request)
