@@ -9,7 +9,7 @@ function submitForm(e) {
       payload[e] = document.querySelector(`#${e}`).value;
      });
   
-     const formUrl = 'https://proorganica.com/mailer/';
+     const formUrl = 'https://proo.izone.workers.dev';
   
      fetch(formUrl, {
         method:'post', 

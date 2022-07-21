@@ -9,17 +9,25 @@
  */
 
 
-const SENDGRID_API_KEY = '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';
-
-
 addEventListener("fetch", async event => {
 	event.respondWith(handleRequest(event.request));
 });
 
 async function handleRequest(request) {
 
+	const responseHeaders = new Headers()
+	responseHeaders.set('Access-Control-Allow-Origin', request.headers.get("Origin"))
+	responseHeaders.set('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE')
+	responseHeaders.set('Access-Control-Max-Age', '86400')
+
+	responseHeaders.set('content-type', 'text/')
+
+	if (request.method === "OPTIONS") {
+		return handleOptions(request)
+	}
+
 	if (request.method !== 'POST') {
-		return new Response('Only POST is supported', { headers: { 'content-type': 'text/plain' } });
+		return new Response('{"text":"Only POST is supported"}', { headers: responseHeaders });
 	}
 
 	const payload = await request.json();
@@ -49,9 +57,9 @@ async function handleRequest(request) {
 	try {
 		message = await sendEmail(msg);
 		text = await message.text();
-		return new Response(`${JSON.stringify({'text': 'Message sent', 'status':message.status})}`, { headers: { 'content-type': 'text/plain' } });
+		return new Response(`${JSON.stringify({'text': 'Message sent', 'status':message.status})}`, { headers: responseHeaders });
 	} catch (e) {
-		return new Response(JSON.stringify({ 'status': e.message, 'code': e.code }), { headers: { 'content-type': 'text/plain' } });
+		return new Response(JSON.stringify({ 'status': e.message, 'code': e.code }), { headers: responseHeaders });
 
 	}
 }
@@ -86,4 +94,28 @@ async function sendEmail({ to, name, from, subject, html }) {
 	});
 
 	return email
+}
+
+const corsHeaders = {
+	"Access-Control-Allow-Origin": "*",
+	"Access-Control-Allow-Methods": "GET, HEAD, POST, OPTIONS",
+	"Access-Control-Allow-Headers": "Content-Type",
+}
+  
+function handleOptions(request) {
+if (request.headers.get("Origin") !== null &&
+	request.headers.get("Access-Control-Request-Method") !== null &&
+	request.headers.get("Access-Control-Request-Headers") !== null) {
+	// Handle CORS pre-flight request.
+	return new Response(null, {
+	headers: corsHeaders
+	})
+} else {
+	// Handle standard OPTIONS request.
+	return new Response(null, {
+	headers: {
+		"Allow": "GET, HEAD, POST, OPTIONS",
+	}
+	})
+}
 }
