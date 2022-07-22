@@ -57,7 +57,7 @@ async function handleRequest(request) {
 	try {
 		message = await sendEmail(msg);
 		text = await message.text();
-		return new Response(`${JSON.stringify({'text': 'Message sent', 'status':message.status})}`, { headers: responseHeaders });
+		return new Response(`${JSON.stringify({'text': `Message sent`, 'status':message.status})}`, { headers: responseHeaders });
 	} catch (e) {
 		return new Response(JSON.stringify({ 'status': e.message, 'code': e.code }), { headers: responseHeaders });
 
@@ -66,29 +66,23 @@ async function handleRequest(request) {
 
 async function sendEmail({ to, name, from, subject, html }) {
 
-	const email = await fetch('https://api.sendgrid.com/v3/mail/send', {
-		body: JSON.stringify({
-			'from': {
-				'email': from, // add your email here
-			},
-			'personalizations': [
-				{
-					'to': [
-						{
-							'email': to,
-							'name': name
-						},
-					],
-				},
-			],
-				'subject': subject,
-				'content': [
-					{ "type": "text/html", value: html }
-				]
-		}),
+	const content = {
+		'from':  from, // add your email here
+		'to':  to,
+		'subject': subject,
+		'html': html
+	};
+
+	const body = Object.keys(content)
+    .map(k => encodeURIComponent(k) + "=" + encodeURIComponent(content[k]))
+    .join("&");
+
+	const email = await fetch('https://api.eu.mailgun.net/v3/proorganica.com/messages', {
+		body: body,
 		headers: {
-			'Authorization': `Bearer ${SENDGRID_API_KEY}`,
-			'Content-Type': 'application/json',
+			'Authorization': "Basic " + btoa("api:" + MAILGUN_API_KEY),
+			"Content-Type": "application/x-www-form-urlencoded",
+			"Content-Length": body.length.toString()
 		},
 		method: 'POST',
 	});
