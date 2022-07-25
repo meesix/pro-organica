@@ -1,0 +1,24 @@
+{
+    "en-GB":[
+       {
+          "slug":"home",
+          "locale":"en-GB",
+          "title":"Home",
+          "metadata":{
+             "header":"New Harvest 2022",
+             "content":""
+          }
+       }
+    ],
+    "uk-UA":[
+       {
+          "slug":"home",
+          "locale":"uk-UA",
+          "title":"Home",
+          "metadata":{
+             "header":"Новий урожай 2022",
+             "content":""
+          }
+       }
+    ]
+ }

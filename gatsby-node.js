@@ -11,6 +11,7 @@ const pages = [
   {id:'contact', slug:'/contact', component : path.resolve(`./src/templates/contact.js`), data: require(`./src/content/contacts/contacts.json`)},
   {id:'certification', slug:'/certification', component : path.resolve(`./src/templates/certification.js`), data: require(`./src/content/certification/certification.json`)},
   {id:'team', slug:'/our_team', component : path.resolve(`./src/templates/team.js`), data: require(`./src/content/contacts/team.json`)},
+  {id:'harvest', slug:'/harvest', component : path.resolve(`./src/templates/harvest.js`), data: require(`./src/content/harvest/harvest.json`)},
 ];
 
 const contentPage = path.resolve(`./src/templates/page.js`);
