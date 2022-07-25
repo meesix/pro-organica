@@ -1229,7 +1229,7 @@ table {
 }
 
 thead tr {
-  background-color: var(--color-med-grey);
+  background-color: var(--color-dark-green);
   color: var(--color-white);
   text-align: left;
   font-weight: bold;

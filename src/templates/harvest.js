@@ -13,7 +13,9 @@ const Harvest = ({ pageContext = {} }) => {
         title={postData.header}
         description={postData.content}
       />
-
+      
+      <div class="PlaceOrderWidget">
+      <h1>New Harvest 2022</h1>
       <h2>ORGANIC RAW MATERIALS</h2>
       <table>
         <thead>
@@ -91,9 +93,10 @@ const Harvest = ({ pageContext = {} }) => {
             </tr>
         </tbody>
       </table>
+      </div>
 
+      <div class="PlaceOrderWidget">
       <h2>ORGANIC PRODUCTS</h2>
-
       <table>
         <thead>
             <tr>
@@ -162,6 +165,7 @@ const Harvest = ({ pageContext = {} }) => {
             </tr>
         </tbody>
       </table>
+      </div>
 
       <PlaceOrderWidget></PlaceOrderWidget>
     </Layout>
