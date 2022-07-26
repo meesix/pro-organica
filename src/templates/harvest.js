@@ -130,6 +130,11 @@ const Harvest = ({ pageContext = {} }) => {
                 <td>25 kg paper bag</td>
             </tr>
             <tr>
+                <td>Millet Hulled</td>
+                <td>240 mt</td>
+                <td>20 or 25 kg paper bag</td>
+            </tr>
+            <tr>
                 <td>Jumbo oats</td>
                 <td>110 mt</td>
                 <td>20 kg paper bag</td>
