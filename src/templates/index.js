@@ -28,9 +28,9 @@ const Index = ({ pageContext }) => {
   return (
     <Layout isHome={true}>
       
-      <div className="PlaceOrderWidget">
-        <a href="harvest/" className="PlaceOrder max-width"><h1>{!ukrainian?"New Harvest 2022":"Новий урожай 2022"}</h1></a>
-      </div>
+//      <div className="PlaceOrderWidget">
+//        <a href="harvest/" className="PlaceOrder max-width"><h1>{!ukrainian?"New Harvest 2022":"Новий урожай 2022"}</h1></a>
+//      </div>
 
       <SEO title="Home" description="Homepage for proOrganica" />
       <Section
