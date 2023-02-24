@@ -4,7 +4,7 @@ import PlaceOrderWidget from "../components/PlaceOrderWidget";
 
 const Certification = ({ pageContext = {} }) => {
   if (!pageContext) return;
-
+  console.log(pageContext.data);
   const postData = pageContext.data[0].metadata;
 
   return (

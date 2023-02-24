@@ -58,7 +58,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "export NODE_OPTIONS=--openssl-legacy-provider; npm run develop",
     "serve": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby serve",
-    "clean": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby clean",
+    "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
