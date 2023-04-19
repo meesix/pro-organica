@@ -8,6 +8,8 @@ import LanguageSelector from '../LanguageSelector';
 import { Navigation, Hero, Section, Grid, Footer, Links } from "..";
 import "../../styles/app.css";
 
+import HeaderImage from "../../images/header.png";
+
 const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
   const [overlay, setOverlay] = useState(false);
   const { pathname } = useLocation();
