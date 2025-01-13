@@ -33,7 +33,7 @@ const Contact = ({ pageContext }) => {
 <div className="flex flex-column">
   <span class="footer-address-header">Ukraine</span>
   <span>ProOrganica</span>
-  <span>Chemex Limited, LLC</span>
+  <span>LIMITED LIABILITY COMPANY "CHEMEX LIMITED"</span>
   <span>Naberezhno-Luhova Str. 12</span>
   <span>Kyiv 04071, Ukraine</span>
   <br/>
