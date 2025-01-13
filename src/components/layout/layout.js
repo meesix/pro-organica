@@ -7,6 +7,7 @@ import LanguageSelector from '../LanguageSelector';
 
 import { Navigation, Hero, Section, Grid, Footer, Links } from "..";
 import "../../styles/app.css";
+import allPages from "../../content/content.json";
 
 import HeaderImage from "../../images/header.png";
 
@@ -20,24 +21,23 @@ const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
   const ukrainian = pathname.includes("uk-UA");
 
   const localize = obj => {
-    return obj.edges.filter(i => i.node.locale.includes(currentLocale));
+    return obj[currentLocale];
   };
 
-  const { allPages } = data;
   const pages = localize(allPages);
   
   const filterHomePage = pages.map(i => {
-    if (i.node.title === "Home") {
-      i.node.slug = "";
+    if (i.title === "Home") {
+      i.slug = "";
     }
 
-    if (i.node.slug === "why-ukraine") {
-      i.node.title = ukrainian ? "Наша команда":"Our team";
-      i.node.slug = "about#team";
+    if (i.slug === "why-ukraine") {
+      i.title = ukrainian ? "Наша команда":"Our team";
+      i.slug = "about#team";
     }
     return i;
   }).sort( (a,b)=> {
-    if (a.node.title === 'Home') {
+    if (a.title === 'Home') {
       return -1;
     }
     return 1;
@@ -84,9 +84,9 @@ const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
                   <Links
                     internal
                     styling="a-white"
-                    href={buildLink(i.node.slug)}
+                    href={buildLink(i.slug)}
                   >
-                    {i.node.title}
+                    {i.title}
                   </Links>
                 </span>
               ))}
@@ -128,46 +128,5 @@ const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
   );
 };
 
-const DefaultLayoutSettingsQuery = props => (
-  <StaticQuery
-    query={graphql`
-      {
-        allPages: allCosmicjsPages {
-          edges {
-            node {
-              slug
-              title
-              locale
-            }
-          }
-        }
-        whiteProOrganicaLogo: file(
-          relativePath: { regex: "/proorganica-logo-white.png/" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
 
-        home: allCosmicjsPages(filter: { slug: { eq: "home" } }) {
-          edges {
-            node {
-              slug
-              locale
-              content
-              title
-              metadata {
-                contact_button
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => <DefaultLayout data={data} {...props} />}
-  />
-);
-
-export default DefaultLayoutSettingsQuery;
+export default DefaultLayout;

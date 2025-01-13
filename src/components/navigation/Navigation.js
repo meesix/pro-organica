@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import NavbarLinks from "./NavbarLinks";
 import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
+
+import allPages from "../../content/content.json";
+
 
 const Nav = styled.nav`
   opacity: 1;
@@ -119,10 +121,8 @@ const Hamburger = styled.div`
 const Navigation = ({ data, setBackgroundOpacity, location }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const locale = location ? "uk-UA" : "en-GB";
-  const pages = data.allCosmicjsPages.edges.filter(({ node }) =>
-    node.locale.includes(locale)
-  );
-
+  const pages = allPages[locale];
+  
   return (
     <Nav
       id="navigation"
@@ -157,24 +157,4 @@ Navigation.propTypes = {
   navClass: PropTypes.string,
 };
 
-const DefaultNavigationQuery = props => (
-  <StaticQuery
-    query={graphql`
-      {
-        allCosmicjsPages {
-          edges {
-            node {
-              slug
-              locale
-              title
-              locale
-            }
-          }
-        }
-      }
-    `}
-    render={data => <Navigation data={data} {...props} />}
-  />
-);
-
-export default DefaultNavigationQuery;
+export default Navigation;

@@ -47,16 +47,16 @@ const NavbarLinks = ({ pages }) => {
       <NavItem to={buildLink('about#team')}>{ukrainian ? "Наша команда" : "Our team"}</NavItem>
 
       {pages
-        .filter(i => i.node.slug !== "home")
+        .filter(i => i.slug !== "home")
         .map((navItem, i) => {
           return (
             <NavItem
               // HACKY: check to see whether Ukrainan in the url and then append uk-UA / leave empty for GB
-              to={buildLink(`${navItem.node.slug}`)}
+              to={buildLink(`${navItem.slug}`)}
               key={i}
-              aria-current={navItem.node.title}
+              aria-current={navItem.title}
             >
-              {navItem.node.title}
+              {navItem.title}
             </NavItem>
           );
         })}

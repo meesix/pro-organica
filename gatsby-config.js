@@ -87,17 +87,6 @@ module.exports = {
         siteUrl: `https://www.proorganica.com`,
       },
     },
-    {
-      resolve: "gatsby-source-cosmicjs",
-      options: {
-        bucketSlug: COSMIC_BUCKET,
-        objectTypes: [`pages`],
-        apiAccess: {
-          read_key: COSMIC_READ_KEY,
-        },
-        localMedia: true,
-      },
-    },
     `gatsby-plugin-offline`,
   ],
 };
