@@ -38,15 +38,15 @@ const Contact = ({ pageContext }) => {
   <span>Kyiv 04071, Ukraine</span>
   <br/>
   <span><a href="mailto:info@proorganica.com">info@proorganica.com</a></span>
-  <span><a href="tel:+380 67 544-93-37">+380 67 544-93-37</a></span>
+  <span><a href="tel:+380 50 302-24-74">+380 50 302-24-74</a></span>
   <br/>
 </div>
 
 <div className="flex flex-column">
   <span class="footer-address-header">UK Distribution</span>
   <span>ProOrganica Limited</span>
-  <span>10 Buncer Lane</span>
-  <span>Blackburn, BB2 6SE</span>
+  <span>3rd floor, 20 Old Bailey</span>
+  <span>London, EC4M 7AN</span>
   <span>United Kingdom</span>
   <br/>
   <span><a href="mailto:info@proorganica.co.uk">info@proorganica.co.uk</a></span>

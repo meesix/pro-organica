@@ -73,17 +73,17 @@
                       "city":"Kyiv",
                       "country":"Ukraine",
                       "name":"Ukraine",
-                      "telephone":"+380 67 544-93-37"
+                      "telephone":"+380 50 302-24-74"
                    },
                    {
                       "building":"ProOrganica Limited",
                       "address":"",
-                      "street":"10 Buncer Lane",
-                      "postcode":"BB2 6SE",
-                      "city":"Blackburn",
+                      "street":"3rd floor, 20 Old Bailey",
+                      "postcode":"EC4M 7AN",
+                      "city":"London",
                       "country":"United Kingdom",
                       "name":"United Kingdom",
-                      "telephone":"+380 67 544-93-37"
+                      "telephone":"+380 50 302-24-74"
                    },
                    {
                      "building":"",
@@ -103,14 +103,14 @@
                       "address":{
                          "address":"",
                          "building":"ProOrganica Limited",
-                         "city":"Blackburn",
+                         "city":"London",
                          "country":"United Kingdom",
-                         "postcode":"BB2 6SE",
-                         "street":"10 Buncer Lane"
+                         "postcode":"EC4M 7AN",
+                         "street":"3rd floor, 20 Old Bailey"
                       },
                       "country":"United Kingdom",
                       "email":null,
-                      "telephone":"+380 67 544-93-37",
+                      "telephone":"+380 50 302-24-74",
                       "name":"ProOrganica UK"
                    },
                    {
@@ -124,7 +124,7 @@
                       },
                       "country":"Ukraine",
                       "email":"info@proorganica.com",
-                      "telephone":"+380 67 544-93-37",
+                      "telephone":"+380 50 302-24-74",
                       "name":"ProOrganica Ukraine"
                    }
                 ]
@@ -188,12 +188,12 @@
                    {
                       "building":"ProOrganica Limited",
                       "address":"",
-                      "street":"10 Buncer Lane",
-                      "postcode":"BB2 6SE",
-                      "city":"Blackburn",
+                      "street":"3rd floor, 20 Old Bailey",
+                      "postcode":"EC4M 7AN",
+                      "city":"London",
                       "country":"United Kingdom",
                       "name":"ProOrganica UK",
-                      "telephone":"+380 67 544-93-37"
+                      "telephone":"+380 50 302-24-74"
                    }
                 ]
              },
@@ -203,14 +203,14 @@
                       "address":{
                          "address":"",
                          "building":"ProOrganica Limited",
-                         "city":"Blackburn",
+                         "city":"London",
                          "country":"United Kingdom",
-                         "postcode":"BB2 6SE",
-                         "street":"10 Buncer Lane"
+                         "postcode":"EC4M 7AN",
+                         "street":"3rd floor, 20 Old Bailey"
                       },
                       "country":"United Kingdom",
                       "email":null,
-                      "telephone":"+380 67 544-93-37",
+                      "telephone":"+380 50 302-24-74",
                       "name":"ProOrganica UK"
                    },
                    {
@@ -224,7 +224,7 @@
                       },
                       "country":"Україна",
                       "email":"info@proorganica.com",
-                      "telephone":"+380 67 544-93-37",
+                      "telephone":"+380 50 302-24-74",
                       "name":"ПроОрганіка Україна"
                    }
                 ]

@@ -8,27 +8,21 @@
              "header":"Certificates",
              "content":"We are proudly working in collaboration with our partners from the UK, Ukraine and across the EU. To download our certificates click on the logos listed below",
              "affiliates_list":{
-                "organic_food_federation":{
-                   "img":"https://imgix.cosmicjs.com/423a9740-532a-11eb-bbc3-d5edc25fc7c1-OFFLogocirclecollarge.jpg?q=&auto=compress,enhance,format,",
-                   "pdf":"https://imgix.cosmicjs.com/b708fdc0-b3ac-11ed-b9d4-2997aef28bcd-OFFCertificate.pdf"
-                },
-                "organic_standard":{
-                  "pdf":"https://imgix.cosmicjs.com/8dcfe390-b3a9-11ed-a13d-c3e6887fd23f-OrganicStandartCertificate.pdf",
-                  "img":"https://imgix.cosmicjs.com/5979abd0-532a-11eb-bbc3-d5edc25fc7c1-OStrademarkfinal.jpg?q=&auto=compress,enhance,format,"
-                },
-                "bio_suisse": {
-                  "img":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png",
-                  "pdf":"https://imgix.cosmicjs.com/8d87b700-b3a9-11ed-a13d-c3e6887fd23f-BioSwissCertificate.pdf"
-                },
-                "iso_22000": {
-                  "img":"https://imgix.cosmicjs.com/ae8a8da0-0838-11ed-b7be-d956591ad437-ISO22000LOGO.png",
-                  "pdf":"https://imgix.cosmicjs.com/0c5ab730-0824-11ed-b7be-d956591ad437-ISO22000CHEMEXLTD.pdf"
-                },
-                "organic_eu":{
-                  "img":"https://imgix.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,"
+               "eu_organic": {
+                 "img":"https://proorganica.com.ua/wp-content/uploads/2025/01/eu_organic.png",
+                 "pdf":"https://proorganica.com.ua/wp-content/uploads/2025/01/24_ae_chemex_certificate_eu.pdf"
                },
-               "organic_ukraine":{
-                  "img":"https://imgix.cosmicjs.com/490d6ac0-532a-11eb-bbc3-d5edc25fc7c1-organic-ukrainelogo.png?q=&auto=compress,enhance,format,"
+                "bio_suisse": {
+                  "img":"https://proorganica.com.ua/wp-content/uploads/2025/01/bio_suisse_logo.png",
+                  "pdf":"https://proorganica.com.ua/wp-content/uploads/2025/01/bs_zertifikat.pdf"
+                 },
+                 "organic_product": {
+                  "img":"https://proorganica.com.ua/wp-content/uploads/2025/01/organic_product.jpg",
+                  "pdf":"https://proorganica.com.ua/wp-content/uploads/2025/01/24_ae_chemex_certificate_ua_2.pdf"
+                 },
+               "fssc": {
+                "img":"https://proorganica.com.ua/wp-content/uploads/2025/01/fssc.png",
+                "pdf":"https://proorganica.com.ua/wp-content/uploads/2025/01/31400426_fssc_v6_2024-09-11_english.pdf"
                }
              }
           }
@@ -43,28 +37,16 @@
              "header":"Сертифікати",
              "content":"Ми пишаємося тим, що співпрацюємо з нашими партнерами із Великої Британії, України та Європи. Щоб завантажити наші сертифікати, натисніть на логотипи, указані нижче",
              "affiliates_list":{
-               "organic_food_federation":{
-                  "img":"https://imgix.cosmicjs.com/423a9740-532a-11eb-bbc3-d5edc25fc7c1-OFFLogocirclecollarge.jpg?q=&auto=compress,enhance,format,",
-                  "pdf":"https://imgix.cosmicjs.com/b708fdc0-b3ac-11ed-b9d4-2997aef28bcd-OFFCertificate.pdf"
-               },
-               "organic_standard":{
-                 "pdf":"https://imgix.cosmicjs.com/8dcfe390-b3a9-11ed-a13d-c3e6887fd23f-OrganicStandartCertificate.pdf",
-                 "img":"https://imgix.cosmicjs.com/5979abd0-532a-11eb-bbc3-d5edc25fc7c1-OStrademarkfinal.jpg?q=&auto=compress,enhance,format,"
-               },
+
                "bio_suisse": {
                  "img":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png",
                  "pdf":"https://imgix.cosmicjs.com/8d87b700-b3a9-11ed-a13d-c3e6887fd23f-BioSwissCertificate.pdf"
                },
-               "iso_22000": {
-                 "img":"https://imgix.cosmicjs.com/ae8a8da0-0838-11ed-b7be-d956591ad437-ISO22000LOGO.png",
-                 "pdf":"https://imgix.cosmicjs.com/0c5ab730-0824-11ed-b7be-d956591ad437-ISO22000CHEMEXLTD.pdf"
-               },
+
                "organic_eu":{
                  "img":"https://imgix.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,"
-              },
-              "organic_ukraine":{
-                 "img":"https://imgix.cosmicjs.com/490d6ac0-532a-11eb-bbc3-d5edc25fc7c1-organic-ukrainelogo.png?q=&auto=compress,enhance,format,"
               }
+
             }
           }
        }
