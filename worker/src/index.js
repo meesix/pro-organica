@@ -32,6 +32,17 @@ async function handleRequest(request) {
 
 	const payload = await request.json();
 
+	// Spam protection: Check if form was submitted too quickly (less than 3 seconds)
+	// This helps filter out bots that fill forms instantly
+	const MIN_FORM_TIME_MS = 3000; // 3 seconds minimum
+	if (payload.proo_form_time && payload.proo_submit_time) {
+		const formDuration = payload.proo_submit_time - payload.proo_form_time;
+		if (formDuration < MIN_FORM_TIME_MS) {
+			// Silently reject but return success to not alert bots
+			return new Response(`${JSON.stringify({'text': 'Message sent', 'status': 200})}`, { headers: responseHeaders });
+		}
+	}
+
 	const msg = {
 		to: 'mee.six@gmail.com',
 		from: 'ProOrganica Site <info@proorganica.com>',
