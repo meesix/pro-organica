@@ -43,6 +43,11 @@ async function handleRequest(request) {
 		}
 	}
 
+	// Validate required fields - don't send if empty or undefined
+	if (!payload.proo_name || !payload.proo_email || !payload.proo_message) {
+		return new Response(`${JSON.stringify({'text': 'Required fields missing', 'status': 400})}`, { headers: responseHeaders });
+	}
+
 	const msg = {
 		to: 'mee.six@gmail.com',
 		from: 'ProOrganica Site <info@proorganica.com>',
