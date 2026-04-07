@@ -33,16 +33,18 @@
              "header":"Сертифікати",
              "content":"Ми пишаємося тим, що співпрацюємо з нашими партнерами із Великої Британії, України та Європи. Щоб завантажити наші сертифікати, натисніть на логотипи, указані нижче",
              "affiliates_list":{
-
-               "bio_suisse": {
-                 "img":"https://imgix.cosmicjs.com/c926cbc0-739f-11ec-886a-130c8e529dc2-BIOSUISSELOGO.png",
-                 "pdf":"https://imgix.cosmicjs.com/8d87b700-b3a9-11ed-a13d-c3e6887fd23f-BioSwissCertificate.pdf"
+               "eu_organic": {
+                 "img":"https://proorganica.com.ua/wp-content/uploads/2025/01/eu_organic.png",
+                 "pdf":"https://proorganica.com.ua/wp-content/uploads/2026/04/25_a_chemex_certificate_eu-3.pdf"
                },
-
-               "organic_eu":{
-                 "img":"https://imgix.cosmicjs.com/3aef1150-532a-11eb-bbc3-d5edc25fc7c1-EUOrganicLogoColourOuterLinergb.gif?q=&auto=compress,enhance,format,"
-              }
-
+               "organic_product": {
+                  "img":"https://proorganica.com.ua/wp-content/uploads/2025/01/organic_product.jpg",
+                  "pdf":"https://proorganica.com.ua/wp-content/uploads/2026/04/25_a_chemex_certificate_ua-1.pdf"
+                 },
+               "fssc": {
+                "img":"https://proorganica.com.ua/wp-content/uploads/2025/01/fssc.png",
+                "pdf":"https://proorganica.com.ua/wp-content/uploads/2025/01/31400426_fssc_v6_2024-09-11_english.pdf"
+               }
             }
           }
        }
