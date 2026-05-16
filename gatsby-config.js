@@ -15,8 +15,6 @@ module.exports = {
     googleSiteVerification:"wiFph5iZOevwAZLs0jGV-zbsWFwEqYHCnzvhY4xUTF0"
   },
   plugins: [
-    `gatsby-plugin-transition-link`,
-
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     {
