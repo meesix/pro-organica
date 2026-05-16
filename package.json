@@ -14,7 +14,6 @@
     "dotenv": "^8.2.0",
     "gatsby": "^3.0.0",
     "gatsby-plugin-canonical-urls": "^3.0.0",
-    "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-gtag": "^3.0.0",
     "gatsby-plugin-manifest": "^3.0.0",
