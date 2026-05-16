@@ -1,7 +1,5 @@
 import React from "react";
 import { Links } from "..";
-import UseAnimations from "react-useanimations";
-import arrowRightCircle from "react-useanimations/lib/arrowRightCircle";
 
 const Card = ({
   title,
@@ -11,7 +9,6 @@ const Card = ({
   label,
   className,
   description,
-  arrow,
   children,
 }) => {
   return (
@@ -24,18 +21,6 @@ const Card = ({
           ></h2>
           )}
 
-          {false && arrow && (
-            <div className="Arrow">
-            <UseAnimations
-              size={46}
-              strokeColor={"var(--color-light-green)"}
-              wrapperStyle={{ marginLeft: 10 }}
-              animation={arrowRightCircle}
-            />
-            </div>
-          )}
-
-    
         {button && (
           <Links
             styling="card-description-text spacing-v-sm button-primary flex flex-center-vertical"
