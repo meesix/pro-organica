@@ -7,7 +7,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "babel-plugin-styled-components": "^1.11.1",
-    "browser-monads": "^1.0.0",
     "dotenv": "^8.2.0",
     "gatsby": "^3.0.0",
     "gatsby-plugin-canonical-urls": "^3.0.0",

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import { window } from "browser-monads";
+import { useLocation } from "@gatsbyjs/reach-router";
 import { buildLink } from "../../utils/helper";
 
 const NavItem = styled(Link)`
@@ -36,7 +36,8 @@ const NavItem = styled(Link)`
 `;
 
 const NavbarLinks = ({ pages }) => {
-  const ukrainian = window.location.pathname.includes("uk-UA");
+  const { pathname } = useLocation();
+  const ukrainian = pathname.includes("uk-UA");
   return (
     <>
       <NavItem to={buildLink('')}>{ukrainian ? "Головна" : "Home"}</NavItem>
@@ -49,7 +50,6 @@ const NavbarLinks = ({ pages }) => {
         .map((navItem, i) => {
           return (
             <NavItem
-              // HACKY: check to see whether Ukrainan in the url and then append uk-UA / leave empty for GB
               to={buildLink(`${navItem.slug}`)}
               key={i}
               aria-current={navItem.title}
