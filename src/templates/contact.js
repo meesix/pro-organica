@@ -38,7 +38,7 @@ const Contact = ({ pageContext }) => {
   <span>Kyiv 04071, Ukraine</span>
   <br/>
   <span><a href="mailto:info@proorganica.com">info@proorganica.com</a></span>
-  <span><a href="tel:+380 50 302-24-74">+380 50 302-24-74</a></span>
+  <span><a href="tel:+380505311118">+380505311118</a></span>
   <br/>
 </div>
 
@@ -50,7 +50,7 @@ const Contact = ({ pageContext }) => {
   <span>United Kingdom</span>
   <br/>
   <span><a href="mailto:info@proorganica.co.uk">info@proorganica.co.uk</a></span>
-  <span><a href="tel:+44 1254 671417">+ 44 1254 671417</a></span>
+  <span><a href="tel:+447879632302">+44 7879 632302</a></span>
 </div>
 
 <div className="flex flex-column">

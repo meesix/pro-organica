@@ -44,8 +44,6 @@ const NavbarLinks = ({ pages }) => {
       <NavItem to={buildLink('certification')}>
         {ukrainian ? "Органічні сертифікати" : "Certification"}
       </NavItem>
-      <NavItem to={buildLink('about#team')}>{ukrainian ? "Наша команда" : "Our team"}</NavItem>
-
       {pages
         .filter(i => i.slug !== "home")
         .map((navItem, i) => {
