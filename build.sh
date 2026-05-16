@@ -4,4 +4,4 @@ git pull
 npm run clean
 npm run build
 sudo chown -R www-data:www-data /var/www/pro-organica/public
-chmod -R 755 /var/www/pro-organica/public
+chmod -R g+rwx /var/www/pro-organica/public
