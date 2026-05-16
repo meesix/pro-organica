@@ -87,6 +87,5 @@ module.exports = {
         siteUrl: `https://www.proorganica.com`,
       },
     },
-    `gatsby-plugin-offline`,
   ],
 };
