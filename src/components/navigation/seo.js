@@ -9,7 +9,7 @@
  import PropTypes from "prop-types";
  import { Helmet } from "react-helmet";
  import site from '../../content/site.json';
- import { useLocation } from "@reach/router";
+ import { useLocation } from "@gatsbyjs/reach-router";
 
  function SEO({ description, image, title, article }) {
     const { pathname } = useLocation();

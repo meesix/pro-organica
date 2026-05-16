@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { SEO, Layout, Image, Section, Links } from "../components";
 import PlaceOrderWidget from "../components/PlaceOrderWidget";
-import { useLocation } from "@reach/router";
+import { useLocation } from "@gatsbyjs/reach-router";
 
 const Page = data => {
  const product = data.pageContext.product;

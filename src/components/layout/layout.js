@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import { useLocation } from "@reach/router";
+import { useLocation } from "@gatsbyjs/reach-router";
 import { StaticQuery, graphql } from "gatsby";
 import { buildLink } from "../../utils/helper";
 import LanguageSelector from '../LanguageSelector';
