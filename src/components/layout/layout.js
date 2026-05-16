@@ -26,20 +26,11 @@ const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
 
   const pages = localize(allPages);
   
-  const filterHomePage = pages.map(i => {
-    if (i.title === "Home") {
-      i.slug = "";
-    }
-
-    if (i.slug === "why-ukraine") {
-      i.title = ukrainian ? "Наша команда":"Our team";
-      i.slug = "about#team";
-    }
-    return i;
-  }).sort( (a,b)=> {
-    if (a.title === 'Home') {
-      return -1;
-    }
+  const filterHomePage = pages.map(i => ({
+    ...i,
+    slug: i.title === "Home" ? "" : i.slug,
+  })).sort((a, b) => {
+    if (a.title === 'Home') return -1;
     return 1;
   })
 
