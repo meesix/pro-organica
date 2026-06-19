@@ -45,25 +45,10 @@ const Page = data => {
                   ({ card, name, imgix_url, position, email, telephone }, index) => {
                     return (
                       <Card key={`${index}-${name}`}>
-                        <>
-                          {card ? (
-                            // <div>
-                            <Image
-                              label={`Image of ${name}, ${position} at ProOrganica`}
-                              image={imgix_url}
-                              styles="border-radius-top"
-                            />
-                          ) : (
-                            // </div>
-                            ""
-                          )}
-                          <Profile
-                            name={name}
-                            position={position}
-                            email={email}
-                            telephone={telephone}
-                          ></Profile>
-                        </>
+                        <Profile
+                          name={name}
+                          position={position}
+                        ></Profile>
                       </Card>
                     );
                   }

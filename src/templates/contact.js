@@ -38,7 +38,7 @@ const Contact = ({ pageContext }) => {
   <span>Kyiv 04071, Ukraine</span>
   <br/>
   <span><a href="mailto:info@proorganica.com">info@proorganica.com</a></span>
-  <span><a href="tel:+380505311118">+380505311118</a></span>
+  <span><a href="tel:+380505311118">+380 50 531 1118</a></span>
   <br/>
 </div>
 

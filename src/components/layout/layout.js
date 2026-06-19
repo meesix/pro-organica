@@ -92,12 +92,12 @@ const DefaultLayout = ({ children, bodyClass, isHome, data, headContent }) => {
             <div className="flex flex-column a-white footer-address">
                 <span class="footer-address-header">Ukraine</span>
                 <span><a class="a-white" href="mailto:info@proorganica.com">info@proorganica.com</a></span>
-                 <span><a class="a-white" href="tel:+380 50 302-24-74">+380 50 302-24-74</a></span>
+                 <span><a class="a-white" href="tel:+380505311118">+380 50 531 1118</a></span>
             </div>
             <div className="flex flex-column a-white footer-address">
                 <span class="footer-address-header">UK Distribution</span>
                 <span><a class="a-white" href="mailto:info@proorganica.co.uk">info@proorganica.co.uk</a></span>
-                <span><a class="a-white" href="tel:+380 50 302-24-74">+ 44 1254 671 41</a></span>
+                <span><a class="a-white" href="tel:+447879632302">+44 7879 632302</a></span>
             </div>
             <div className="flex flex-column a-white footer-address">
                 <span class="footer-address-header">EU Distribution</span>

@@ -7,20 +7,24 @@ const Contact = ({ name, position, email, telephone, styles }) => {
         <ul>
           <li>{name}</li>
           <li>{position}</li>
-          <li>
-            <a
-              className="text-emphasis darken"
-              href={`mailto:${email}`}
-              rel="noreferrer"
-            >
-              {email}{" "}
-            </a>
-          </li>
-          <li>
-            <a className="dark-darken" href={`tel:+${telephone}`}>
-              {telephone}
-            </a>
-          </li>
+          {email && (
+            <li>
+              <a
+                className="text-emphasis darken"
+                href={`mailto:${email}`}
+                rel="noreferrer"
+              >
+                {email}{" "}
+              </a>
+            </li>
+          )}
+          {telephone && (
+            <li>
+              <a className="dark-darken" href={`tel:+${telephone}`}>
+                {telephone}
+              </a>
+            </li>
+          )}
         </ul>
       </div>
     </figure>
