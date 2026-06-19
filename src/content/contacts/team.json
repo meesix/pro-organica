@@ -15,8 +15,8 @@
                      "country": "UK",
                      "id": "luba_michailova",
                      "card": true,
-                     "url":"https://cdn.cosmicjs.com/3027f050-658d-11eb-8120-dfe8ec2b682f-ef2183b0-3f1b-11eb-bce7-979a7cd98f5e-DSC0963.jpeg",
-                     "imgix_url":"https://imgix.cosmicjs.com/3027f050-658d-11eb-8120-dfe8ec2b682f-ef2183b0-3f1b-11eb-bce7-979a7cd98f5e-DSC0963.jpeg"  
+                     "url":"/images/DSC0963.jpeg",
+                     "imgix_url":"/images/DSC0963.jpeg"  
                    }
                ],
                "contact_list_details": [
@@ -28,8 +28,8 @@
                     "country": "Ukraine",
                     "id": "pavel_gukov",
                     "card": true,
-                    "url":"https://cdn.cosmicjs.com/2c7807b0-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg",
-                    "imgix_url":"https://imgix.cosmicjs.com/2c7807b0-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg" 
+                    "url":"/images/DSC0653.jpeg",
+                    "imgix_url":"/images/DSC0653.jpeg" 
                   },
                   {
                     "name": "Eugene Blokhin",
@@ -39,8 +39,8 @@
                     "country": "Ukraine",
                     "id": "eugene_blokhin",
                     "card": true,
-                    "url":"https://cdn.cosmicjs.com/35c66280-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg",
-                    "imgix_url":"https://imgix.cosmicjs.com/35c66280-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg" 
+                    "url":"/images/Eugene-Blokhin.jpg",
+                    "imgix_url":"/images/Eugene-Blokhin.jpg" 
                   },
                   {
                     "name": "Iryna Sholokhova",
@@ -50,8 +50,8 @@
                     "country": "Ukraine",
                     "id": "iryna_sholokhova",
                     "card": true,
-                    "url":"https://cdn.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
-                    "imgix_url":"https://imgix.cosmicjs.com/3a302540-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg" 
+                    "url":"/images/Iryna-Sholokhova.jpg",
+                    "imgix_url":"/images/Iryna-Sholokhova.jpg" 
                   },
                   { 
                      "name": "Jackie Bonfield",
@@ -61,7 +61,7 @@
                      "country": "United Kingdom",
                      "id": "jackie_bonfield",
                      "card": true,
-                     "imgix_url":"https://imgix.cosmicjs.com/eef52300-ade9-11eb-bd86-3988be5a9e1c-e4ce13b2-70e2-4db4-83ca-6d7f07b0fe66.JPG"
+                     "imgix_url":"/images/e4ce13b2-70e2-4db4-83ca-6d7f07b0fe66.JPG"
                   }
                 ],
                 "address_list":[
@@ -148,8 +148,8 @@
                     "id": "eugene_blokhin",
                     "country": "Ukraine",
                     "card": true,
-                    "url":"https://cdn.cosmicjs.com/071123d0-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg",
-                    "imgix_url":"https://imgix.cosmicjs.com/071123d0-658d-11eb-8120-dfe8ec2b682f-df985600-503a-11eb-90a5-8da4f0d331aa-Eugene-Blokhin.jpg" 
+                    "url":"/images/Eugene-Blokhin.jpg",
+                    "imgix_url":"/images/Eugene-Blokhin.jpg" 
                   },
                   {
                     "name": "Ірина Шолохова",
@@ -159,8 +159,8 @@
                     "country": "Ukraine",
                     "id": "iryna_sholokhova",
                     "card": true,
-                    "url":"https://cdn.cosmicjs.com/0d2f4d50-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg",
-                    "imgix_url":"https://imgix.cosmicjs.com/0d2f4d50-658d-11eb-8120-dfe8ec2b682f-f9708c00-503a-11eb-90a5-8da4f0d331aa-Iryna-Sholokhova.jpg"
+                    "url":"/images/Iryna-Sholokhova.jpg",
+                    "imgix_url":"/images/Iryna-Sholokhova.jpg"
                   },
                   {
                     "name": "Павел Гуков",
@@ -170,8 +170,8 @@
                     "country": "Ukraine",
                     "id": "pavel_gukov",
                     "card": true,
-                    "url":"https://cdn.cosmicjs.com/12379a00-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg",
-                    "imgix_url":"https://imgix.cosmicjs.com/12379a00-658d-11eb-8120-dfe8ec2b682f-c75aa040-3f9e-11eb-8abb-39454084eadd-DSC0653.jpeg" 
+                    "url":"/images/DSC0653.jpeg",
+                    "imgix_url":"/images/DSC0653.jpeg" 
                   }
                 ],
                 "address_list":[

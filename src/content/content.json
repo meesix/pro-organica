@@ -18,7 +18,7 @@
           "metadata":{
              "excerpt":"Read why Ukraine is poised to be the next organic agricultural powerhouse",
              "main_image":{
-                "imgix_url":"https://imgix.cosmicjs.com/66404d60-3fb6-11eb-8abb-39454084eadd-why-ukraine-copy.jpg"
+                "imgix_url":"/images/why-ukraine-copy.jpg"
              }
           }
        },
@@ -30,7 +30,7 @@
           "metadata":{
              "excerpt":"We source suppliers of organic raw materials in Ukraine, purchase, dehull, sort, pack and supply organic products to the UK and other countries of Europe and the world. ",
              "main_image":{
-                "imgix_url":"https://imgix.cosmicjs.com/a05365f0-3fb6-11eb-8abb-39454084eadd-what-we-offer-.jpg"
+                "imgix_url":"/images/what-we-offer-.jpg"
              }
           }
        },
@@ -42,7 +42,7 @@
           "metadata":{
              "excerpt":"We have certified organic production facilities in Ukraine for dehulling, cleaning, sorting, and packaging organic cereals and pulses following our customers' specific requirements.\nWe organise the export of organic products from Ukraine to the UK, EU and other countries globally. ",
              "main_image":{
-                "imgix_url":"https://imgix.cosmicjs.com/29bd3be0-70ae-11eb-87a2-9be5e90cdf74-aboutus.jpg"
+                "imgix_url":"/images/aboutus.jpg"
              }
           }
        }
@@ -66,7 +66,7 @@
           "metadata":{
              "excerpt":"Прочитайте, чому Україна може стати великим світовим постачальником ипродуктів у сфері органічного сільського господарства.",
              "main_image":{
-                "imgix_url":"https://imgix.cosmicjs.com/66404d60-3fb6-11eb-8abb-39454084eadd-why-ukraine-copy.jpg"
+                "imgix_url":"/images/why-ukraine-copy.jpg"
              }
           }
        },
@@ -78,7 +78,7 @@
           "metadata":{
              "excerpt":"Ми обираємо постачальників сировини в Україні, здійснюємо закупку, лущення, очистку, сортування, упаковку і поставку органічної продукції до Великобританії та інших країн Європи і світу.",
              "main_image":{
-                "imgix_url":"https://imgix.cosmicjs.com/a05365f0-3fb6-11eb-8abb-39454084eadd-what-we-offer-.jpg"
+                "imgix_url":"/images/what-we-offer-.jpg"
              }
           }
        },
@@ -90,7 +90,7 @@
           "metadata":{
              "excerpt":"Ми, «Хімекс Лтд» (Україна) з нашим основним бізнес-партнером «ПроОрганіка Лтд» (Великобританія) організовуємо експорт органічних продуктів з України до Великобританії, ЄС та інших країн світу, реалізуючи потенціал України як генератора органічного сільського господарства.",
              "main_image":{
-                "imgix_url":"https://imgix.cosmicjs.com/29bd3be0-70ae-11eb-87a2-9be5e90cdf74-aboutus.jpg"
+                "imgix_url":"/images/aboutus.jpg"
              }
           }
        }

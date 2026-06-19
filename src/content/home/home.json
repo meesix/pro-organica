@@ -6,9 +6,9 @@
           "content":"",
           "title":"Home",
           "pages": [
-               {"title":"Why Ukraine", "locale":"en-GB", "slug":"why-ukraine", "image":"https://imgix.cosmicjs.com/66404d60-3fb6-11eb-8abb-39454084eadd-why-ukraine-copy.jpg"},
-               {"title":"What we offer", "locale":"en-GB", "slug":"what-we-offer", "image":"https://imgix.cosmicjs.com/a05365f0-3fb6-11eb-8abb-39454084eadd-what-we-offer-.jpg"},
-               {"title":"About us", "locale":"en-GB", "slug":"about", "image":"https://imgix.cosmicjs.com/29bd3be0-70ae-11eb-87a2-9be5e90cdf74-aboutus.jpg"}
+               {"title":"Why Ukraine", "locale":"en-GB", "slug":"why-ukraine", "image":"/images/why-ukraine-copy.jpg"},
+               {"title":"What we offer", "locale":"en-GB", "slug":"what-we-offer", "image":"/images/what-we-offer-.jpg"},
+               {"title":"About us", "locale":"en-GB", "slug":"about", "image":"/images/aboutus.jpg"}
           ],
           "metadata":{
              "products":"We offer a range of organic products (ingredients) for the food and feed industry including cereal grains, pulses, oil seeds, flour and various oils",
@@ -16,28 +16,28 @@
              "product_header":"Our Products",
              "products_list":{
                 "cereal_grains":{
-                   "url":"https://cdn.cosmicjs.com/5d3736f0-70a0-11eb-87a2-9be5e90cdf74-ORGANIC-HULLED-SPELTMAIN-PHOTO-3.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/5d3736f0-70a0-11eb-87a2-9be5e90cdf74-ORGANIC-HULLED-SPELTMAIN-PHOTO-3.jpg"
+                   "url":"/images/ORGANIC-HULLED-SPELTMAIN-PHOTO-3.jpg",
+                   "imgix_url":"/images/ORGANIC-HULLED-SPELTMAIN-PHOTO-3.jpg"
                 },
                 "source_to_order":{
-                   "url":"https://cdn.cosmicjs.com/3e6e6b30-658d-11eb-8120-dfe8ec2b682f-dffc3700-3f1a-11eb-bce7-979a7cd98f5e-product-image-collection-secondary.jpeg",
-                   "imgix_url":"https://imgix.cosmicjs.com/3e6e6b30-658d-11eb-8120-dfe8ec2b682f-dffc3700-3f1a-11eb-bce7-979a7cd98f5e-product-image-collection-secondary.jpeg"
+                   "url":"/images/product-image-collection-secondary.jpeg",
+                   "imgix_url":"/images/product-image-collection-secondary.jpeg"
                 },
                 "flour":{
-                   "url":"https://cdn.cosmicjs.com/22f35c50-709e-11eb-87a2-9be5e90cdf74-spelt-flouroptimized.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/22f35c50-709e-11eb-87a2-9be5e90cdf74-spelt-flouroptimized.jpg"
+                   "url":"/images/spelt-flouroptimized.jpg",
+                   "imgix_url":"/images/spelt-flouroptimized.jpg"
                 },
                 "pulses":{
-                   "url":"https://cdn.cosmicjs.com/58c67f90-658d-11eb-8120-dfe8ec2b682f-00112cf0-3f19-11eb-bce7-979a7cd98f5e-proorganica-product-l.jpeg",
-                   "imgix_url":"https://imgix.cosmicjs.com/58c67f90-658d-11eb-8120-dfe8ec2b682f-00112cf0-3f19-11eb-bce7-979a7cd98f5e-proorganica-product-l.jpeg"
+                   "url":"/images/proorganica-product-l.jpeg",
+                   "imgix_url":"/images/proorganica-product-l.jpeg"
                 },
                 "seed_oils":{
-                   "url":"https://cdn.cosmicjs.com/133d4be0-709e-11eb-87a2-9be5e90cdf74-oils-5optimized.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/133d4be0-709e-11eb-87a2-9be5e90cdf74-oils-5optimized.jpg"
+                   "url":"/images/oils-5optimized.jpg",
+                   "imgix_url":"/images/oils-5optimized.jpg"
                 },
                 "seeds":{
-                   "url":"https://cdn.cosmicjs.com/bed8a5e0-7061-11eb-87a2-9be5e90cdf74-FLUX.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/bed8a5e0-7061-11eb-87a2-9be5e90cdf74-FLUX.jpg"
+                   "url":"/images/FLUX.jpg",
+                   "imgix_url":"/images/FLUX.jpg"
                 },
                 "product_list_details":[
                    {
@@ -92,8 +92,8 @@
              },
              "main_image":null,
              "home_banner_image":{
-                "url":"https://cdn.cosmicjs.com/f4a63950-71d1-11eb-87a2-9be5e90cdf74-Intro2x-2.jpg",
-                "imgix_url":"https://imgix.cosmicjs.com/f4a63950-71d1-11eb-87a2-9be5e90cdf74-Intro2x-2.jpg"
+                "url":"/images/Intro2x-2.jpg",
+                "imgix_url":"/images/Intro2x-2.jpg"
              },
              "home_banner_description":"We supply premium quality organic products from some of the richest soils on earth to our partners around the world",
              "contact_us":"We would love to hear from you. Contact us if you have any questions, we would be happy to help answer them",
@@ -110,9 +110,9 @@
           "content":"",
           "title":"Home",
           "pages": [
-            {"title":"Чому Україна", "locale":"uk-UA", "slug":"why-ukraine", "image":"https://imgix.cosmicjs.com/66404d60-3fb6-11eb-8abb-39454084eadd-why-ukraine-copy.jpg"},
-            {"title":"Наші послуги", "locale":"uk-UA", "slug":"what-we-offer", "image":"https://imgix.cosmicjs.com/a05365f0-3fb6-11eb-8abb-39454084eadd-what-we-offer-.jpg"},
-            {"title":"Про нас", "locale":"uk-UA", "slug":"about", "image":"https://imgix.cosmicjs.com/29bd3be0-70ae-11eb-87a2-9be5e90cdf74-aboutus.jpg"}
+            {"title":"Чому Україна", "locale":"uk-UA", "slug":"why-ukraine", "image":"/images/why-ukraine-copy.jpg"},
+            {"title":"Наші послуги", "locale":"uk-UA", "slug":"what-we-offer", "image":"/images/what-we-offer-.jpg"},
+            {"title":"Про нас", "locale":"uk-UA", "slug":"about", "image":"/images/aboutus.jpg"}
          ],
           "metadata":{
              "products":"Органічні зернові та бобові з самих богатих грунтів на землі",
@@ -120,28 +120,28 @@
              "product_header":"НАШІ ПРОДУКТИ",
              "products_list":{
                 "cereal_grains":{
-                   "url":"https://cdn.cosmicjs.com/943a80a0-7062-11eb-87a2-9be5e90cdf74-ORGANIC-HULLED-SPELTMAIN-PHOTO-2-2.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/943a80a0-7062-11eb-87a2-9be5e90cdf74-ORGANIC-HULLED-SPELTMAIN-PHOTO-2-2.jpg"
+                   "url":"/images/ORGANIC-HULLED-SPELTMAIN-PHOTO-2-2.jpg",
+                   "imgix_url":"/images/ORGANIC-HULLED-SPELTMAIN-PHOTO-2-2.jpg"
                 },
                 "source_to_order":{
-                   "url":"https://cdn.cosmicjs.com/aa939b50-6588-11eb-8120-dfe8ec2b682f-dd24ff10-3fb2-11eb-8abb-39454084eadd-IMG2333.jpeg",
-                   "imgix_url":"https://imgix.cosmicjs.com/aa939b50-6588-11eb-8120-dfe8ec2b682f-dd24ff10-3fb2-11eb-8abb-39454084eadd-IMG2333.jpeg"
+                   "url":"/images/IMG2333.jpeg",
+                   "imgix_url":"/images/IMG2333.jpeg"
                 },
                 "flour":{
-                   "url":"https://cdn.cosmicjs.com/22f35c50-709e-11eb-87a2-9be5e90cdf74-spelt-flouroptimized.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/22f35c50-709e-11eb-87a2-9be5e90cdf74-spelt-flouroptimized.jpg"
+                   "url":"/images/spelt-flouroptimized.jpg",
+                   "imgix_url":"/images/spelt-flouroptimized.jpg"
                 },
                 "pulses":{
-                   "url":"https://cdn.cosmicjs.com/faea0680-658c-11eb-8120-dfe8ec2b682f-00112cf0-3f19-11eb-bce7-979a7cd98f5e-proorganica-product-l.jpeg",
-                   "imgix_url":"https://imgix.cosmicjs.com/faea0680-658c-11eb-8120-dfe8ec2b682f-00112cf0-3f19-11eb-bce7-979a7cd98f5e-proorganica-product-l.jpeg"
+                   "url":"/images/proorganica-product-l.jpeg",
+                   "imgix_url":"/images/proorganica-product-l.jpeg"
                 },
                 "seed_oils":{
-                   "url":"https://cdn.cosmicjs.com/133d4be0-709e-11eb-87a2-9be5e90cdf74-oils-5optimized.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/133d4be0-709e-11eb-87a2-9be5e90cdf74-oils-5optimized.jpg"
+                   "url":"/images/oils-5optimized.jpg",
+                   "imgix_url":"/images/oils-5optimized.jpg"
                 },
                 "seeds":{
-                   "url":"https://cdn.cosmicjs.com/bed8a5e0-7061-11eb-87a2-9be5e90cdf74-FLUX.jpg",
-                   "imgix_url":"https://imgix.cosmicjs.com/bed8a5e0-7061-11eb-87a2-9be5e90cdf74-FLUX.jpg"
+                   "url":"/images/FLUX.jpg",
+                   "imgix_url":"/images/FLUX.jpg"
                 },
                 "product_list_details":[
                    {
