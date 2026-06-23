@@ -38,23 +38,6 @@ const Page = data => {
 
       {slug === "about" && 
       (
-        <Section id="team" title={contact_data[locale][0].metadata.team_header}>
-          <Grid className="grid-secondary spacing-v-lg">
-              {contact_list &&
-                contact_list.map(
-                  ({ card, name, imgix_url, position, email, telephone }, index) => {
-                    return (
-                      <Card key={`${index}-${name}`}>
-                        <Profile
-                          name={name}
-                          position={position}
-                        ></Profile>
-                      </Card>
-                    );
-                  }
-                )}
-            </Grid>
-        </Section>
 
       )}
 
