@@ -36,10 +36,6 @@ const Page = data => {
         </article>
       </Section>
 
-      {slug === "about" && 
-      (
-
-      )}
 
       <PlaceOrderWidget></PlaceOrderWidget>
     </Layout>
